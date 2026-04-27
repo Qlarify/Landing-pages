@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Cardiology Marketing — Video as Infrastructure | Qlarify Health</title>
-<meta name="description" content="Qlarify Health helps cardiac centres move patients from chest pain to intervention faster — video infrastructure for families making time-critical decisions." />
+<meta name="description" content="Qlarify Health rebuilds cardiac video as patient-journey infrastructure. Built for cardiac centres where decisions happen in hours — for families, not patients. A decade inside Indian healthcare." />
 <link rel="canonical" href="https://videoaudit.qlarify.health/cardiology" />
 <link rel="icon" href="/favicon.ico" />
 <meta property="og:type" content="website" />
@@ -81,16 +81,10 @@
   .num{font-family:'Playfair Display',serif;font-style:italic;color:#E8835F;font-size:22px;line-height:1}
   .q-mark{font-family:'Playfair Display',serif;font-style:italic;color:#5a7a94;font-size:13px}
   .hospital-strip{color:#163460;font-weight:500;font-size:13px}
-  .brand{display:inline-flex;align-items:flex-start;gap:10px;text-decoration:none}
-  .brand .logo-q{width:25px;height:27px;color:#163460;flex-shrink:0;display:block}
-  .brand .logo-text{display:inline-flex;flex-direction:column;align-items:flex-start;line-height:1}
-  .brand .logo-larify{font-family:'DM Sans',sans-serif;font-weight:800;font-size:18px;color:#163460;letter-spacing:.18em;line-height:1}
-  .brand .logo-health{font-family:'DM Sans',sans-serif;font-weight:800;font-size:10px;color:#E8835F;letter-spacing:.32em;line-height:1;margin-top:4px}
-  .brand.sm .logo-q{width:21px;height:22px}
-  .brand.sm .logo-larify{font-size:15px}
-  .brand.sm .logo-health{font-size:8.5px;margin-top:3px}
-  .brand.on-dark .logo-q{color:#fff}
-  .brand.on-dark .logo-larify{color:#fff}
+  .brand{display:inline-flex;align-items:center;text-decoration:none;height:44px}
+  .brand svg{height:100%;width:auto;display:block}
+  .brand.sm{height:34px}
+  @media (max-width:520px){.brand{height:36px}}
 
   /* Hero — light cream section */
   .hero{position:relative;background:linear-gradient(180deg,#fdf7f2 0%,#f7f0ea 45%,#eef3f8 100%);color:#163460;overflow:hidden;isolation:isolate;border-bottom:1px solid #e6dfd8}
@@ -145,17 +139,15 @@
   /* Trust strip — hospital logos */
   .trust-strip{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border-top:1px solid #e6dfd8;border-bottom:1px solid #dde5ec}
   .trust-eyebrow{text-align:center;color:#5a7a94;font-family:'DM Sans',sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
-  .trust-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;align-items:stretch;margin-top:22px}
-  @media (max-width:1024px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
-  @media (max-width:600px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
-  .tl{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;padding:14px 8px;border:1px solid #e3ebf3;border-radius:12px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%);color:#163460;opacity:.82;transition:all .25s ease;min-height:74px}
-  .tl:hover{opacity:1;border-color:#f4c5a5;box-shadow:0 8px 18px -10px rgba(232,131,95,.35);transform:translateY(-1px)}
-  .tl .tl-dot{width:6px;height:6px;border-radius:50%;background:#E8835F;opacity:.85;margin-bottom:2px}
-  .tl .tl-name{font-weight:700;font-size:14px;line-height:1.1;letter-spacing:-.3px}
-  .tl .tl-sub{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#5a7a94;font-weight:500}
-  .tl-serif .tl-name{font-family:'Playfair Display',serif;font-weight:700}
-  .tl-sans .tl-name{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:-.4px}
-  .tl-italic .tl-name{font-family:'Playfair Display',serif;font-style:italic;font-weight:600}
+  .trust-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;align-items:stretch;margin-top:24px}
+  @media (max-width:1024px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:12px}}
+  @media (max-width:600px){.trust-grid{grid-template-columns:repeat(3,1fr);gap:10px}}
+  @media (max-width:380px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+  .tl{display:flex;align-items:center;justify-content:center;padding:16px 12px;border:1px solid #e3ebf3;border-radius:12px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%);transition:all .25s ease;min-height:74px}
+  .tl:hover{border-color:#f4c5a5;box-shadow:0 8px 18px -10px rgba(232,131,95,.35);transform:translateY(-1px)}
+  .tl img{max-height:36px;max-width:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(100%);opacity:.78;transition:filter .25s ease, opacity .25s ease}
+  .tl:hover img{filter:grayscale(0);opacity:1}
+  @media (max-width:600px){.tl{padding:12px 8px;min-height:64px}.tl img{max-height:28px}}
 
   /* Sticky floating CTA */
   .sticky-cta{position:fixed;right:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#E8835F 0%,#d05a18 100%);color:#fff;padding:14px 20px;border-radius:999px;font-weight:600;font-size:14px;box-shadow:0 14px 32px -8px rgba(232,131,95,.55),0 4px 12px rgba(15,37,71,.2),inset 0 1px 0 rgba(255,255,255,.25);transform:translateY(14px);opacity:0;pointer-events:none;transition:opacity .25s ease, transform .25s ease}
@@ -163,6 +155,24 @@
   .sticky-cta:hover{background:linear-gradient(180deg,#d05a18 0%,#b44410 100%)}
   .sticky-cta svg{width:16px;height:16px}
   @media (max-width:520px){.sticky-cta{right:14px;bottom:14px;padding:12px 16px;font-size:13px}}
+
+  /* Mobile responsiveness fine-tuning */
+  @media (max-width:520px){
+    .hero h1.h-serif{font-size:34px !important;line-height:1.1}
+    .hero .max-w-7xl{padding-top:96px;padding-bottom:56px}
+    .h-serif{letter-spacing:-.3px}
+    .btn-primary{padding:12px 20px;font-size:14px}
+    .btn-ghost.on-light{padding:12px 18px;font-size:14px}
+    #cta-nav{padding:8px 14px !important}
+    section h2.h-serif{font-size:26px !important;line-height:1.12}
+    .hero .card .grid > div > div:first-child{font-size:26px !important}
+    #book h2.h-serif{font-size:28px !important}
+    .vid-title{font-size:15px}
+  }
+  @media (max-width:380px){
+    .hero h1.h-serif{font-size:30px !important}
+    .hero .card .grid > div > div:first-child{font-size:22px !important}
+  }
 </style>
 </head>
 <body class="bg-cream">
@@ -170,11 +180,12 @@
 <header class="absolute top-0 inset-x-0 z-20">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="index.html" class="brand" aria-label="Qlarify Health">
-      <svg class="logo-q" viewBox="0 0 135 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="91.19" y1="92.54" x2="122.09" y2="132.10" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
-        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0h86a6.5 6.5 0 0 1 6.5 6.5v84a6.5 6.5 0 0 1-6.5 6.5h-86A6.5 6.5 0 0 1 0 90.5v-84A6.5 6.5 0 0 1 6.5 0ZM26.5 17.5a7 7 0 0 0-7 7v48a7 7 0 0 0 7 7h46a7 7 0 0 0 7-7v-48a7 7 0 0 0-7-7h-46Z"/>
+      <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#163460" fill-rule="evenodd" d="M7,4 H45 A3,3 0 0 1 48,7 V45 A3,3 0 0 1 45,48 H7 A3,3 0 0 1 4,45 V7 A3,3 0 0 1 7,4 Z M16,12 H36 A3,3 0 0 1 39,15 V36 A3,3 0 0 1 36,39 H16 A3,3 0 0 1 13,36 V15 A3,3 0 0 1 16,12 Z"/>
+        <line x1="44" y1="46" x2="57" y2="61" stroke="#163460" stroke-width="7" stroke-linecap="round"/>
+        <text x="62" y="38" font-family="'DM Sans', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#163460">LARIFY</text>
+        <text x="66" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="6" fill="#E8835F">HEALTH</text>
       </svg>
-      <span class="logo-text"><span class="logo-larify">LARIFY</span><span class="logo-health">HEALTH</span></span>
     </a>
     <nav class="hidden md:flex items-center gap-6 text-[14px] text-ink/75">
       <a href="#concept" class="hover:text-rust">The concept</a>
@@ -190,26 +201,26 @@
 <section class="hero">
   <div class="max-w-7xl mx-auto px-6 pt-28 pb-20 md:pt-32 md:pb-24 grid md:grid-cols-12 gap-10 items-center">
     <div class="md:col-span-7">
-      <span class="chip"><span class="dot"></span> For Cardiac & Heart Centres · Video is Infrastructure</span>
+      <span class="chip"><span class="dot"></span> Cardiology · Video is Infrastructure</span>
       <h1 class="h-serif mt-5 text-[40px] md:text-[58px] font-bold">
-        At 2am, the family isn't reading<br/>your <em>website</em>. They're <em>watching</em>.
+        At 2am, the family isn't reading your <em>website</em>.<br/>They're <em>watching</em> something.
       </h1>
-      <p class="mt-6 text-[16px] md:text-[17px] text-ink/75 max-w-xl leading-relaxed">Cardiac decisions are rarely made alone and rarely made slowly. A family has hours — not weeks — to choose where dad goes for his bypass. What they watch in those hours decides it.</p>
+      <p class="mt-6 text-[16px] md:text-[17px] text-ink/75 max-w-xl leading-relaxed">Cardiac decisions don't get made alone, and they don't get made slowly. A family has hours — not weeks — to choose where their father goes for his bypass. What they watch in those hours decides which cath lab he ends up in.</p>
       <div class="mt-7 flex flex-wrap items-center gap-3">
-        <a href="#book" id="cta-primary" class="btn-primary">Book a 30-min call →</a>
+        <a href="#book" id="cta-primary" class="btn-primary">Book a 30-min strategy call →</a>
         <a href="#concept" class="btn-ghost on-light">See how it works</a>
       </div>
     </div>
     <div class="md:col-span-5">
       <div class="card p-6">
-        <div class="eyebrow !text-ink/60 mb-3">A decade of healthcare video</div>
+        <div class="eyebrow !text-ink/60 mb-3">Built inside Indian healthcare</div>
         <div class="grid grid-cols-3 gap-3 text-center">
-          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">10<span class="text-rust">+</span></div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Years focused only on healthcare</div></div>
-          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">10K<span class="text-rust">+</span></div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Patient-facing videos produced</div></div>
-          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">1</div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Thesis — video as infrastructure</div></div>
+          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">10<span class="text-rust">+</span></div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Years inside hospital marketing</div></div>
+          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">10K<span class="text-rust">+</span></div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Patient-facing videos shipped</div></div>
+          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">1</div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Operating thesis: video is infrastructure</div></div>
         </div>
         <div class="h-px my-4 bg-border"></div>
-        <div class="text-[13px] text-ink/70 leading-relaxed">We don't pitch campaigns. We diagnose the gap between what a patient is searching for and what your clinic is saying — and build the library that closes it.</div>
+        <div class="text-[13px] text-ink/70 leading-relaxed">We don't pitch shoots. We diagnose the silence between what a cardiac family is searching for and what your centre has answered — and build the library that closes the loop.</div>
       </div>
     </div>
   </div>
@@ -218,15 +229,15 @@
 <!-- TRUST STRIP — hospital logos -->
 <section class="trust-strip">
   <div class="max-w-7xl mx-auto px-6 py-10 md:py-12">
-    <div class="trust-eyebrow">A decade of work with India's leading hospitals</div>
+    <div class="trust-eyebrow">Trusted inside India's most-recognised hospital systems</div>
     <div class="trust-grid">
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Manipal</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">Narayana</span><span class="tl-sub">Health</span></div>
-      <div class="tl tl-italic"><span class="tl-dot"></span><span class="tl-name">Sparsh</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">Sakra</span><span class="tl-sub">World Hospital</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">KIMS</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Rainbow</span><span class="tl-sub">Children's</span></div>
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Gleneagles</span><span class="tl-sub">Hospitals</span></div>
+      <div class="tl"><img src="https://qlarify.health/logos/manipal.svg" alt="Manipal Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/narayana.png" alt="Narayana Health" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/sparsh.svg" alt="Sparsh Hospital" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/sakra.svg" alt="Sakra World Hospital" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/kims.png" alt="KIMS Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/rainbow.svg" alt="Rainbow Children's Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/gleneagles.png" alt="Gleneagles Hospitals" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -236,13 +247,13 @@
   <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
     <div class="max-w-3xl">
       <div class="eyebrow mb-3">The concept</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Cardiac patients don't decide. <em>Families do</em>.</h2>
-      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">The daughter in the cab choosing the hospital is not your patient. She's your decision-maker. We build the library that makes her trust your cath lab before she arrives — and refer you to five more families afterwards.</p>
+      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Cardiac patients don't choose hospitals. <em>Families do</em>.</h2>
+      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">The daughter in the back of the cab is not your patient — she's your decision-maker. We build the library that earns her trust before the ambulance pulls in, and turns her into the reason five more families choose you next month.</p>
     </div>
     <div class="mt-10 grid md:grid-cols-3 gap-4">
-      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Trust in a 20-minute decision</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">Clear procedure videos give families permission to choose you, fast.</p></div>
-      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Referral-physician confidence</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">GPs refer to centres whose work they can see. Video makes your protocols visible.</p></div>
-      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Post-op adherence lifts</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">Rehab and lifestyle videos reduce readmission and build advocacy.</p></div>
+      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Trust in a 20-minute window</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">A clear procedure video gives a panicked family permission to choose you — without a second opinion they don't have time for.</p></div>
+      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Referring-physician confidence</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">GPs and small-town cardiologists refer to centres whose work they can show their patient. Video makes your protocols visible — and referrable.</p></div>
+      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Post-op adherence compounds</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">Rehab and lifestyle videos cut readmission, lift advocacy, and turn one bypass patient into a decade of word-of-mouth.</p></div>
     </div>
   </div>
 </section>
@@ -253,12 +264,13 @@
     <div class="max-w-3xl">
       <div class="eyebrow mb-3">How we work</div>
       <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">We don't start with a <em>camera</em>.<br/>We start with a <em>map</em>.</h2>
+      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">Four moves, in sequence. Each one earns the right to the next. Skip one and the library starts leaking again.</p>
     </div>
     <div class="mt-10 grid md:grid-cols-4 gap-4">
-      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Audit</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Inventory every existing video. Tag by sub-specialty, stage, format, performance.</p></div>
-      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Map</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Place each video on a two-axis grid: sub-specialty × patient journey stage.</p></div>
-      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Identify</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Rank the gaps by patient volume, revenue and conversion impact.</p></div>
-      <div class="card card-accent p-5"><div class="num">04</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Create</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Produce targeted video for the gaps that matter — tuned to viewer intent.</p></div>
+      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Audit</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Pull every cardiac video your centre has ever shipped — across YouTube, web, social, WhatsApp. Tag by sub-specialty, stage, format, and performance.</p></div>
+      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Map</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Plot the entire library on one grid: sub-specialty (ACS, valve, EP, heart failure) × journey stage. The over-served, the silent, all in one view.</p></div>
+      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Prioritise</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Score the gaps against cath-lab volume, surgical revenue, and where families are dropping off. Decide what to shoot next with evidence — not intuition.</p></div>
+      <div class="card card-accent p-5"><div class="num">04</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Produce</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Build the missing pieces — tuned to the exact intent, language, and stage of the family who's about to watch them. Every shoot is a fix, not a fresh campaign.</p></div>
     </div>
   </div>
 </section>
@@ -269,47 +281,47 @@
     <div class="max-w-3xl">
       <div class="eyebrow mb-3">The framework</div>
       <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Four stages. Four <em>jobs</em> for video.</h2>
-      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">A video that lands at awareness often fails at decision. Each stage needs its own verb — and its own format.</p>
+      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">A family at the first chest pain needs a different video than a family choosing between CABG and angioplasty. Same disease, same hospital — completely different question. Each stage has one job. Use the wrong format, lose the family.</p>
     </div>
     <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
       <div>
         <div class="stage-dot mb-3">1</div>
         <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Symptoms</div>
+          <div class="eyebrow text-rust mb-1">Awareness</div>
           <div class="font-serif italic text-ink text-[22px] font-semibold">Educate</div>
           <p class="q-mark mt-1">"Is this a heart attack?"</p>
           <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Warning signs, ER thresholds, chest-pain primers.</p>
+          <p class="micro">Warning signs. ER thresholds. The 3am chest-pain primer.</p>
         </div>
       </div>
       <div>
         <div class="stage-dot mb-3">2</div>
         <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Specialist choice</div>
-          <div class="font-serif italic text-ink text-[22px] font-semibold">Credibilize</div>
-          <p class="q-mark mt-1">"Who should see him?"</p>
+          <div class="eyebrow text-rust mb-1">Trust Building</div>
+          <div class="font-serif italic text-ink text-[22px] font-semibold">Credibilise</div>
+          <p class="q-mark mt-1">"Does this cath lab actually know what it's doing?"</p>
           <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Interventional cardiologist intros, case volumes.</p>
+          <p class="micro">Interventional cardiologist intros. Case volumes. Proof of expertise — not promotion.</p>
         </div>
       </div>
       <div>
         <div class="stage-dot mb-3">3</div>
         <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Procedure</div>
+          <div class="eyebrow text-rust mb-1">Decision</div>
           <div class="font-serif italic text-ink text-[22px] font-semibold">Reassure</div>
-          <p class="q-mark mt-1">"CABG or angioplasty?"</p>
+          <p class="q-mark mt-1">"CABG or angioplasty — which does dad need?"</p>
           <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Decision-aid videos, day-by-day expectations.</p>
+          <p class="micro">Decision-aid videos. Day-by-day expectations. What life looks like after.</p>
         </div>
       </div>
       <div>
         <div class="stage-dot mb-3">4</div>
         <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Rehab</div>
+          <div class="eyebrow text-rust mb-1">Post-Treatment Care</div>
           <div class="font-serif italic text-ink text-[22px] font-semibold">Guide</div>
-          <p class="q-mark mt-1">"How do we avoid another?"</p>
+          <p class="q-mark mt-1">"How do we make sure this doesn't happen again?"</p>
           <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Cardiac rehab, diet, medication adherence.</p>
+          <p class="micro">Cardiac rehab. Diet. Medication adherence. The reason families refer.</p>
         </div>
       </div>
     </div>
@@ -321,25 +333,26 @@
   <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
     <div class="max-w-3xl">
       <div class="eyebrow mb-3">Why Qlarify</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Built for <em>healthcare</em>. Not adapted to it.</h2>
+      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Built for <em>cardiology</em>. Not borrowed from advertising.</h2>
+      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">Most agencies treat a cardiac centre like another B2C category. We've spent a decade learning that a family choosing a bypass at 2am behaves nothing like a customer choosing anything else.</p>
     </div>
     <div class="mt-10 grid md:grid-cols-2 gap-4">
       <div class="card p-6">
         <div class="eyebrow text-ink/60 mb-2">Generic agency</div>
         <ul class="space-y-2 text-[14.5px] text-ink/75">
-          <li class="flex gap-3"><span class="cross">✕</span> Generic 'we care about hearts' campaigns.</li>
-          <li class="flex gap-3"><span class="cross">✕</span> No family-facing content.</li>
-          <li class="flex gap-3"><span class="cross">✕</span> No vernacular content.</li>
-          <li class="flex gap-3"><span class="cross">✕</span> Reach metrics.</li>
+          <li class="flex gap-3"><span class="cross">✕</span> "We care about hearts" brand films that move no one.</li>
+          <li class="flex gap-3"><span class="cross">✕</span> Patient-facing only — nothing for the family making the call.</li>
+          <li class="flex gap-3"><span class="cross">✕</span> English-only content. Tier-2 referrals never see it.</li>
+          <li class="flex gap-3"><span class="cross">✕</span> Reports of impressions, reach, and CPM.</li>
         </ul>
       </div>
       <div class="card p-6" style="border-color:#E8835F;">
         <div class="eyebrow text-rust mb-2">Qlarify Health</div>
         <ul class="space-y-2 text-[14.5px] text-ink/90">
-          <li class="flex gap-3"><span class="check">◆</span> A mapped library for ACS, valve disease, arrhythmia, heart failure.</li>
-          <li class="flex gap-3"><span class="check">◆</span> Videos built for the decision-maker who isn't the patient.</li>
-          <li class="flex gap-3"><span class="check">◆</span> Regional-language explainers for the geographies that refer to you.</li>
-          <li class="flex gap-3"><span class="check">◆</span> Measured in cath-lab volume, bypass starts and referral lift.</li>
+          <li class="flex gap-3"><span class="check">◆</span> A mapped library across ACS, valve, arrhythmia, and heart failure.</li>
+          <li class="flex gap-3"><span class="check">◆</span> Films written for the daughter in the cab — not the patient on the gurney.</li>
+          <li class="flex gap-3"><span class="check">◆</span> Vernacular explainers for the geographies that actually refer to you.</li>
+          <li class="flex gap-3"><span class="check">◆</span> Measured in cath-lab volume, bypass starts, and referring-physician lift.</li>
         </ul>
       </div>
     </div>
@@ -350,76 +363,80 @@
 <section id="work" class="sec-white border-y border-border">
   <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
     <div class="max-w-3xl">
-      <div class="eyebrow mb-3">Sample work</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">5 videos. Out of <em>10,000+</em>.</h2>
-      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">A five-film snapshot of the library we've built for hospitals over the last decade. The real value isn't any single film — it's the <em class="font-serif text-ink">map</em> that tells you which one to make next, for which patient, at which stage.</p>
+      <div class="eyebrow mb-3">Sample work · Cardiology</div>
+      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Five films. The full <em>cardiology journey</em>.</h2>
+      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">Five films we've produced for Manipal Hospitals — sequenced. Watched in order, they walk a heart patient and their family from the first symptom at midnight to life after recovery. This is what <em class="font-serif text-ink">video as infrastructure</em> looks like in production.</p>
     </div>
     <div class="mt-10 carousel-wrap">
       <button class="carousel-nav carousel-prev" aria-label="Previous video">&lsaquo;</button>
       <div class="carousel-track">
+        <!-- v1: Awareness / Symptom Explainer -->
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v1.webm">
-            <div class="poster" style="background-image:url('assets/posters/v1.jpg')"></div>
-            <span class="vid-badge">Condition Primer</span>
-            <span class="vid-dur">2:18</span>
+          <div class="vid-shell" data-yt="2RhP2SkSkGw">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/2RhP2SkSkGw/maxresdefault.jpg')"></div>
+            <span class="vid-badge">Symptom Explainer</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
             <div class="vid-stage">01 · Educate <span class="stage-label">Awareness</span></div>
-            <h4 class="vid-title">Lymphoma — explained by Dr. Mallikarjun Kalashetty</h4>
-            <div class="vid-source">Manipal Hospitals · Old Airport Road</div>
+            <h4 class="vid-title">Heart Attack — symptoms, risks &amp; what to do first</h4>
+            <div class="vid-source">Manipal Hospitals · Hebbal · Dr. Mahesh Myllarappa</div>
           </div>
         </div>
+
+        <!-- v2: Trust Building / Procedure Explainer -->
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v2.webm">
-            <div class="poster" style="background-image:url('assets/posters/v2.jpg')"></div>
+          <div class="vid-shell" data-yt="TfcOj9KJTH4">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/TfcOj9KJTH4/maxresdefault.jpg')"></div>
+            <span class="vid-badge">Procedure Explainer</span>
+            <div class="play"><div class="play-ring"></div></div>
+          </div>
+          <div class="vid-meta">
+            <div class="vid-stage">02 · Credibilise <span class="stage-label">Trust Building</span></div>
+            <h4 class="vid-title">Angiography &amp; Angioplasty — what actually happens</h4>
+            <div class="vid-source">Manipal Hospital · Mukundapur · Dr. Soumya Patra</div>
+          </div>
+        </div>
+
+        <!-- v3: Trust Building / Doctor POV -->
+        <div class="vid-card carousel-card">
+          <div class="vid-shell" data-yt="6qG0Dnq7Jbc">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/6qG0Dnq7Jbc/maxresdefault.jpg')"></div>
             <span class="vid-badge">Doctor POV</span>
-            <span class="vid-dur">1:12</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
-            <div class="vid-stage">02 · Credibilize <span class="stage-label">Consideration</span></div>
-            <h4 class="vid-title">Know Your Doctor — Dr. Raghavendra Chikkatur</h4>
-            <div class="vid-source">Manipal Hospitals · Varthur Road</div>
+            <div class="vid-stage">02 · Credibilise <span class="stage-label">Trust Building</span></div>
+            <h4 class="vid-title">Inside a coronary angioplasty — the cardiologist's view</h4>
+            <div class="vid-source">Manipal Hospitals · Sarjapur Road · Dr. M Sudhakar Rao</div>
           </div>
         </div>
+
+        <!-- v4: Decision / Patient Testimonial -->
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v3.webm">
-            <div class="poster" style="background-image:url('assets/posters/v3.jpg')"></div>
-            <span class="vid-badge">Treatment Walkthrough</span>
-            <span class="vid-dur">2:07</span>
-            <div class="play"><div class="play-ring"></div></div>
-          </div>
-          <div class="vid-meta">
-            <div class="vid-stage">02 · Credibilize <span class="stage-label">Consideration</span></div>
-            <h4 class="vid-title">Anterior Cervical Discectomy — procedure explained</h4>
-            <div class="vid-source">Manipal Hospitals · Whiteboard explainer</div>
-          </div>
-        </div>
-        <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v4.webm">
-            <div class="poster" style="background-image:url('assets/posters/v4.jpg')"></div>
+          <div class="vid-shell" data-yt="QsEDTz1qbO4">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/QsEDTz1qbO4/maxresdefault.jpg')"></div>
             <span class="vid-badge">Patient Testimonial</span>
-            <span class="vid-dur">3:00</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
             <div class="vid-stage">03 · Reassure <span class="stage-label">Decision</span></div>
-            <h4 class="vid-title">Ms. Thanuja's journey with Dr. S. Vidyadhara</h4>
-            <div class="vid-source">Manipal Hospitals · Old Airport Road</div>
+            <h4 class="vid-title">Sheikh Nazim's multivessel angioplasty — in his own words</h4>
+            <div class="vid-source">Manipal Hospitals India · with Dr. Pradeep Haranahalli</div>
           </div>
         </div>
+
+        <!-- v5: Post-Treatment Care / Recovery Guide -->
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v5.webm">
-            <div class="poster" style="background-image:url('assets/posters/v5.jpg')"></div>
-            <span class="vid-badge">Recovery Guide · Animated</span>
-            <span class="vid-dur">1:06</span>
+          <div class="vid-shell" data-yt="Ti7qJqpHtxM">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/Ti7qJqpHtxM/maxresdefault.jpg')"></div>
+            <span class="vid-badge">Recovery Guide</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
-            <div class="vid-stage">04 · Guide <span class="stage-label">Post-treatment</span></div>
-            <h4 class="vid-title">Breast Surgery & Post-Care — the emotional reality</h4>
-            <div class="vid-source">Manipal Hospitals · 2D Animated Explainer</div>
+            <div class="vid-stage">04 · Guide <span class="stage-label">Post-Treatment Care</span></div>
+            <h4 class="vid-title">Life after angioplasty — what recovery actually looks like</h4>
+            <div class="vid-source">Manipal Hospital · Gurugram · Dr. Dixit Garg</div>
           </div>
         </div>
       </div>
@@ -431,6 +448,7 @@
         <button class="carousel-dot" data-index="3" aria-label="Video 4"></button>
         <button class="carousel-dot" data-index="4" aria-label="Video 5"></button>
       </div>
+      <p class="mt-6 text-[13px] text-ink/55 text-center">All five videos are live on the official <a href="https://www.youtube.com/@Manipalhospitals" class="underline hover:text-rust">Manipal Hospitals</a> YouTube channel — produced by Qlarify Health.</p>
     </div>
   </div>
 </section>
@@ -439,10 +457,10 @@
 <section id="book" class="cta-section">
   <div class="max-w-5xl mx-auto px-6 py-16 md:py-20 text-center relative z-10">
     <div class="eyebrow text-rust mb-3">Discovery call</div>
-    <h2 class="h-serif text-ink text-[30px] md:text-[46px] font-bold">Start with a <em>30-min discovery call</em>.</h2>
-    <p class="mt-5 text-[16px] text-ink/80 max-w-2xl mx-auto leading-relaxed">The first call is simple. We'll walk you through how video-as-infrastructure works for cardiology, hear the challenges your centre is facing, and together decide if a pilot audit is the right next step. No deck. No pitch. A real conversation.</p>
+    <h2 class="h-serif text-ink text-[30px] md:text-[46px] font-bold">Stop briefing the next cardiac shoot.<br/>Start with the <em>map</em>.</h2>
+    <p class="mt-5 text-[16px] text-ink/80 max-w-2xl mx-auto leading-relaxed">A 30-minute call. We pull up your cardiology pages, walk through where the family journey breaks, and decide together if a pilot audit is the right next move. No deck. No pitch. A working session for marketing heads who already know the library is broken.</p>
     <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-      <a href="#book" class="btn-primary">Book a 30-min discovery call →</a>
+      <a href="#book" class="btn-primary">Book a 30-min strategy call →</a>
     </div>
     <div class="mt-6 flex flex-wrap items-center justify-center gap-5 text-[14px] text-ink/70">
       <a href="mailto:info@qlarify.health" class="hover:text-rust">info@qlarify.health</a>
@@ -457,11 +475,12 @@
 <footer class="bg-cream border-t border-border">
   <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-3">
     <a href="index.html" class="brand sm" aria-label="Qlarify Health">
-      <svg class="logo-q" viewBox="0 0 135 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="91.19" y1="92.54" x2="122.09" y2="132.10" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
-        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0h86a6.5 6.5 0 0 1 6.5 6.5v84a6.5 6.5 0 0 1-6.5 6.5h-86A6.5 6.5 0 0 1 0 90.5v-84A6.5 6.5 0 0 1 6.5 0ZM26.5 17.5a7 7 0 0 0-7 7v48a7 7 0 0 0 7 7h46a7 7 0 0 0 7-7v-48a7 7 0 0 0-7-7h-46Z"/>
+      <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#163460" fill-rule="evenodd" d="M7,4 H45 A3,3 0 0 1 48,7 V45 A3,3 0 0 1 45,48 H7 A3,3 0 0 1 4,45 V7 A3,3 0 0 1 7,4 Z M16,12 H36 A3,3 0 0 1 39,15 V36 A3,3 0 0 1 36,39 H16 A3,3 0 0 1 13,36 V15 A3,3 0 0 1 16,12 Z"/>
+        <line x1="44" y1="46" x2="57" y2="61" stroke="#163460" stroke-width="7" stroke-linecap="round"/>
+        <text x="62" y="38" font-family="'DM Sans', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#163460">LARIFY</text>
+        <text x="66" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="6" fill="#E8835F">HEALTH</text>
       </svg>
-      <span class="logo-text"><span class="logo-larify">LARIFY</span><span class="logo-health">HEALTH</span></span>
     </a>
     <div class="micro">© 2026 Qlarify Health · Video is Infrastructure. Not Campaigns.</div>
   </div>
@@ -494,12 +513,25 @@
   document.querySelectorAll('.vid-shell').forEach(shell => {
     shell.addEventListener('click', () => {
       if (shell.classList.contains('playing')) return;
-      const src = shell.getAttribute('data-src');
-      if (!src) return;
-      const v = document.createElement('video');
-      v.src = src; v.controls = true; v.autoplay = true; v.playsInline = true;
-      shell.appendChild(v);
-      shell.classList.add('playing');
+      const ytId = shell.getAttribute('data-yt');
+      const src  = shell.getAttribute('data-src');
+      if (ytId) {
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        iframe.title = 'YouTube video player';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.style.cssText = 'width:100%;height:100%;border:0;display:block';
+        shell.appendChild(iframe);
+        shell.classList.add('playing');
+        return;
+      }
+      if (src) {
+        const v = document.createElement('video');
+        v.src = src; v.controls = true; v.autoplay = true; v.playsInline = true;
+        shell.appendChild(v);
+        shell.classList.add('playing');
+      }
     });
   });
 
