@@ -16,7 +16,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://videoaudit.qlarify.health/cardiology</loc>
+    <loc>https://videoaudit.qlarify.health/cardiac-sciences</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -27,6 +27,21 @@
   </url>
   <url>
     <loc>https://videoaudit.qlarify.health/dental</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://videoaudit.qlarify.health/women-child</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://videoaudit.qlarify.health/ophthalmology</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://videoaudit.qlarify.health/orthopaedics</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
