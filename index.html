@@ -86,16 +86,10 @@
   .num{font-family:'Playfair Display',serif;font-style:italic;color:#E8835F;font-size:24px;line-height:1}
   .q-mark{font-family:'Playfair Display',serif;font-style:italic;color:#5a7a94;font-size:13px}
   .hospital-strip{color:#163460;font-weight:500;font-size:13px}
-  .brand{display:inline-flex;align-items:flex-start;gap:10px;text-decoration:none}
-  .brand .logo-q{width:25px;height:27px;color:#163460;flex-shrink:0;display:block}
-  .brand .logo-text{display:inline-flex;flex-direction:column;align-items:flex-start;line-height:1}
-  .brand .logo-larify{font-family:'DM Sans',sans-serif;font-weight:800;font-size:18px;color:#163460;letter-spacing:.18em;line-height:1}
-  .brand .logo-health{font-family:'DM Sans',sans-serif;font-weight:800;font-size:10px;color:#E8835F;letter-spacing:.32em;line-height:1;margin-top:4px}
-  .brand.sm .logo-q{width:21px;height:22px}
-  .brand.sm .logo-larify{font-size:15px}
-  .brand.sm .logo-health{font-size:8.5px;margin-top:3px}
-  .brand.on-dark .logo-q{color:#fff}
-  .brand.on-dark .logo-larify{color:#fff}
+  .brand{display:inline-flex;align-items:center;text-decoration:none;height:44px}
+  .brand svg{height:100%;width:auto;display:block}
+  .brand.sm{height:34px}
+  @media (max-width:520px){.brand{height:36px}}
 
   /* Hero: light cream section with warm rust + ink washes */
   .hero{position:relative;background:linear-gradient(180deg,#fdf7f2 0%,#f7f0ea 45%,#eef3f8 100%);color:#163460;overflow:hidden;isolation:isolate;border-bottom:1px solid #e6dfd8}
@@ -151,17 +145,15 @@
   /* Trust strip — hospital logos */
   .trust-strip{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border-top:1px solid #e6dfd8;border-bottom:1px solid #dde5ec}
   .trust-eyebrow{text-align:center;color:#5a7a94;font-family:'DM Sans',sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
-  .trust-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;align-items:stretch;margin-top:22px}
-  @media (max-width:1024px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
-  @media (max-width:600px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
-  .tl{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;padding:14px 8px;border:1px solid #e3ebf3;border-radius:12px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%);color:#163460;opacity:.82;transition:all .25s ease;min-height:74px}
-  .tl:hover{opacity:1;border-color:#f4c5a5;box-shadow:0 8px 18px -10px rgba(232,131,95,.35);transform:translateY(-1px)}
-  .tl .tl-dot{width:6px;height:6px;border-radius:50%;background:#E8835F;opacity:.85;margin-bottom:2px}
-  .tl .tl-name{font-weight:700;font-size:14px;line-height:1.1;letter-spacing:-.3px}
-  .tl .tl-sub{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#5a7a94;font-weight:500}
-  .tl-serif .tl-name{font-family:'Playfair Display',serif;font-weight:700}
-  .tl-sans .tl-name{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:-.4px}
-  .tl-italic .tl-name{font-family:'Playfair Display',serif;font-style:italic;font-weight:600}
+  .trust-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;align-items:stretch;margin-top:24px}
+  @media (max-width:1024px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:12px}}
+  @media (max-width:600px){.trust-grid{grid-template-columns:repeat(3,1fr);gap:10px}}
+  @media (max-width:380px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+  .tl{display:flex;align-items:center;justify-content:center;padding:16px 12px;border:1px solid #e3ebf3;border-radius:12px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%);transition:all .25s ease;min-height:74px}
+  .tl:hover{border-color:#f4c5a5;box-shadow:0 8px 18px -10px rgba(232,131,95,.35);transform:translateY(-1px)}
+  .tl img{max-height:36px;max-width:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(100%);opacity:.78;transition:filter .25s ease, opacity .25s ease}
+  .tl:hover img{filter:grayscale(0);opacity:1}
+  @media (max-width:600px){.tl{padding:12px 8px;min-height:64px}.tl img{max-height:28px}}
 
   /* Sticky floating CTA */
   .sticky-cta{position:fixed;right:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#E8835F 0%,#d05a18 100%);color:#fff;padding:14px 20px;border-radius:999px;font-weight:600;font-size:14px;box-shadow:0 14px 32px -8px rgba(232,131,95,.55),0 4px 12px rgba(15,37,71,.2),inset 0 1px 0 rgba(255,255,255,.25);transform:translateY(14px);opacity:0;pointer-events:none;transition:opacity .25s ease, transform .25s ease}
@@ -169,21 +161,42 @@
   .sticky-cta:hover{background:linear-gradient(180deg,#d05a18 0%,#b44410 100%)}
   .sticky-cta svg{width:16px;height:16px}
   @media (max-width:520px){.sticky-cta{right:14px;bottom:14px;padding:12px 16px;font-size:13px}}
+
+  /* Mobile responsiveness fine-tuning */
+  @media (max-width:520px){
+    .hero h1.h-serif{font-size:36px !important;line-height:1.1}
+    .hero{}
+    .hero .max-w-7xl{padding-top:96px;padding-bottom:56px}
+    .h-serif{letter-spacing:-.3px}
+    .btn-primary{padding:12px 20px;font-size:14px}
+    .btn-ghost.on-light{padding:12px 18px;font-size:14px}
+    #cta-nav{padding:8px 14px !important}
+    /* Tighter section H2s on phones */
+    section h2.h-serif{font-size:28px !important;line-height:1.12}
+    /* Hero stats card — keep 3 columns but shrink the number a touch */
+    .hero .card .grid > div > div:first-child{font-size:28px !important}
+    /* CTA section heading */
+    #book h2.h-serif{font-size:30px !important}
+    /* Reduce video meta title size slightly on phones */
+    .vid-title{font-size:15px}
+  }
+  @media (max-width:380px){
+    .hero h1.h-serif{font-size:32px !important}
+    .hero .card .grid > div > div:first-child{font-size:24px !important}
+  }
 </style>
 </head>
 <body class="bg-cream">
 
 <header class="absolute top-0 inset-x-0 z-20">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="#" class="brand" aria-label="Qlarify Health">
-      <svg class="logo-q" viewBox="0 0 135 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="91.19" y1="92.54" x2="122.09" y2="132.10" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
-        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0h86a6.5 6.5 0 0 1 6.5 6.5v84a6.5 6.5 0 0 1-6.5 6.5h-86A6.5 6.5 0 0 1 0 90.5v-84A6.5 6.5 0 0 1 6.5 0ZM26.5 17.5a7 7 0 0 0-7 7v48a7 7 0 0 0 7 7h46a7 7 0 0 0 7-7v-48a7 7 0 0 0-7-7h-46Z"/>
+    <a href="https://qlarify.health" class="brand" aria-label="Qlarify Health">
+      <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#163460" fill-rule="evenodd" d="M7,4 H45 A3,3 0 0 1 48,7 V45 A3,3 0 0 1 45,48 H7 A3,3 0 0 1 4,45 V7 A3,3 0 0 1 7,4 Z M16,12 H36 A3,3 0 0 1 39,15 V36 A3,3 0 0 1 36,39 H16 A3,3 0 0 1 13,36 V15 A3,3 0 0 1 16,12 Z"/>
+        <line x1="44" y1="46" x2="57" y2="61" stroke="#163460" stroke-width="7" stroke-linecap="round"/>
+        <text x="62" y="38" font-family="'DM Sans', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#163460">LARIFY</text>
+        <text x="66" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="6" fill="#E8835F">HEALTH</text>
       </svg>
-      <span class="logo-text">
-        <span class="logo-larify">LARIFY</span>
-        <span class="logo-health">HEALTH</span>
-      </span>
     </a>
     <nav class="hidden md:flex items-center gap-7 text-[14px] text-ink/75">
       <a href="#reality" class="hover:text-rust">The problem</a>
@@ -243,13 +256,13 @@
   <div class="max-w-7xl mx-auto px-6 py-10 md:py-12">
     <div class="trust-eyebrow">Trusted inside India's most-recognised hospital systems</div>
     <div class="trust-grid">
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Manipal</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">Narayana</span><span class="tl-sub">Health</span></div>
-      <div class="tl tl-italic"><span class="tl-dot"></span><span class="tl-name">Sparsh</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">Sakra</span><span class="tl-sub">World Hospital</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">KIMS</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Rainbow</span><span class="tl-sub">Children's</span></div>
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Gleneagles</span><span class="tl-sub">Hospitals</span></div>
+      <div class="tl"><img src="https://qlarify.health/logos/manipal.svg" alt="Manipal Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/narayana.png" alt="Narayana Health" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/sparsh.svg" alt="Sparsh Hospital" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/sakra.svg" alt="Sakra World Hospital" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/kims.png" alt="KIMS Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/rainbow.svg" alt="Rainbow Children's Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/gleneagles.png" alt="Gleneagles Hospitals" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -504,15 +517,13 @@
 
 <footer class="bg-cream border-t border-border">
   <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-3">
-    <a href="#" class="brand sm" aria-label="Qlarify Health">
-      <svg class="logo-q" viewBox="0 0 135 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="91.19" y1="92.54" x2="122.09" y2="132.10" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
-        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0h86a6.5 6.5 0 0 1 6.5 6.5v84a6.5 6.5 0 0 1-6.5 6.5h-86A6.5 6.5 0 0 1 0 90.5v-84A6.5 6.5 0 0 1 6.5 0ZM26.5 17.5a7 7 0 0 0-7 7v48a7 7 0 0 0 7 7h46a7 7 0 0 0 7-7v-48a7 7 0 0 0-7-7h-46Z"/>
+    <a href="https://qlarify.health" class="brand sm" aria-label="Qlarify Health">
+      <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#163460" fill-rule="evenodd" d="M7,4 H45 A3,3 0 0 1 48,7 V45 A3,3 0 0 1 45,48 H7 A3,3 0 0 1 4,45 V7 A3,3 0 0 1 7,4 Z M16,12 H36 A3,3 0 0 1 39,15 V36 A3,3 0 0 1 36,39 H16 A3,3 0 0 1 13,36 V15 A3,3 0 0 1 16,12 Z"/>
+        <line x1="44" y1="46" x2="57" y2="61" stroke="#163460" stroke-width="7" stroke-linecap="round"/>
+        <text x="62" y="38" font-family="'DM Sans', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#163460">LARIFY</text>
+        <text x="66" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="6" fill="#E8835F">HEALTH</text>
       </svg>
-      <span class="logo-text">
-        <span class="logo-larify">LARIFY</span>
-        <span class="logo-health">HEALTH</span>
-      </span>
     </a>
     <div class="micro">© 2026 Qlarify Health · Video is Infrastructure. Not Campaigns.</div>
   </div>
