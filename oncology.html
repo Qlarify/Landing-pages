@@ -3,427 +3,785 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Oncology Marketing — Video as Infrastructure | Qlarify Health</title>
-<meta name="description" content="Qlarify Health helps cancer centres earn trust in the hardest weeks of a patient's life — video infrastructure built for clarity, not clicks." />
+<title>Free Video Audit for Cancer Centres — Qlarify Health</title>
+<meta name="description" content="Free 7-day video audit for oncology and cancer centre marketing teams. We map your entire video library against the patient journey and rank the top 10 gaps costing you new treatment starts." />
 <link rel="canonical" href="https://videoaudit.qlarify.health/oncology" />
-<link rel="icon" href="/favicon.ico" />
+<link rel="icon" href="https://qlarify.health/favicon.ico" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://videoaudit.qlarify.health/oncology" />
-<meta property="og:title" content="Oncology Marketing — Video as Infrastructure | Qlarify Health" />
-<meta property="og:description" content="Qlarify Health helps cancer centres earn trust in the hardest weeks of a patient's life — video infrastructure built for clarity, not clicks." />
-<meta property="og:image" content="https://videoaudit.qlarify.health/og-image.jpg" />
+<meta property="og:title" content="Free Video Audit for Cancer Centres — Qlarify Health" />
+<meta property="og:description" content="7-day video audit for cancer centres. Library inventory, sub-specialty × stage gap matrix, top 10 missing videos. Free." />
+<meta property="og:image" content="https://qlarify.health/og-image.jpg" />
 <meta property="og:site_name" content="Qlarify Health" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Oncology Marketing — Video as Infrastructure | Qlarify Health" />
-<meta name="twitter:description" content="Qlarify Health helps cancer centres earn trust in the hardest weeks of a patient's life — video infrastructure built for clarity, not clicks." />
-<meta name="twitter:image" content="https://videoaudit.qlarify.health/og-image.jpg" />
+<meta name="twitter:title" content="Free Video Audit for Cancer Centres — Qlarify Health" />
+<meta name="twitter:description" content="7-day audit. Oncology library mapped. Top 10 gaps ranked. Free." />
+<meta name="twitter:image" content="https://qlarify.health/og-image.jpg" />
 <meta name="robots" content="index,follow" />
 <meta name="theme-color" content="#163460" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  const CALENDLY_URL = "https://calendly.com/qlarify-marketing/30min";
-  tailwind.config = {
-    theme: { extend: {
-      colors: { ink:'#163460','ink-light':'#2c5f84', rust:'#E8835F','rust-dk':'#d05a18','rust-pale':'#fdeee5',
-                 cream:'#f5f5f5','section-alt':'#e8eef3', border:'#c8d8e4' },
-      fontFamily: { serif:['"Playfair Display"','serif'], sans:['"DM Sans"','system-ui','sans-serif'] },
-    } }
-  }
-</script>
+
 <style>
-  body{font-family:'DM Sans',sans-serif;color:#163460;background:#f5f5f5;-webkit-font-smoothing:antialiased;
-        background-image:
-          radial-gradient(1000px 500px at 10% 0%,rgba(232,131,95,.06),transparent 60%),
-          radial-gradient(900px 600px at 90% 20%,rgba(22,52,96,.05),transparent 60%),
-          linear-gradient(180deg,#f5f5f5 0%,#eef3f8 100%);
-        background-attachment:fixed}
-  .h-serif{font-family:'Playfair Display',serif;letter-spacing:-.5px;line-height:1.06}
-  .h-serif em{font-style:italic;color:#E8835F}
-  .eyebrow{font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#163460}
-  .chip{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;background:#fdeee5;border:1px solid #f4c5a5;border-radius:999px;font-size:13px;color:#d05a18;font-weight:500}
-  .chip.on-dark{background:rgba(232,131,95,.14);border-color:rgba(232,131,95,.5);color:#E8835F}
-  .chip .dot{width:7px;height:7px;border-radius:50%;background:#E8835F;animation:pulse 2s infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-  .btn-primary{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#E8835F 0%,#d66c43 100%);color:#fff;padding:13px 26px;border-radius:999px;font-weight:500;font-size:15px;transition:all .2s ease;box-shadow:0 4px 16px -4px rgba(232,131,95,.5),inset 0 1px 0 rgba(255,255,255,.2)}
-  .btn-primary:hover{background:linear-gradient(180deg,#d66c43 0%,#bc4f29 100%);transform:translateY(-1px);box-shadow:0 6px 20px -4px rgba(232,131,95,.55)}
-  .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border:1px solid rgba(255,255,255,.3);border-radius:999px;color:#fff;font-weight:500;font-size:15px;background:transparent;transition:all .2s}
-  .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
-  .btn-ghost.on-light{border:1px solid #c8d8e4;color:#163460;background:#fff}
-  .btn-ghost.on-light:hover{border-color:#163460;background:#e8eef3}
-  .card{background:linear-gradient(180deg,#ffffff 0%,#fafcfe 100%);border:1px solid #c8d8e4;border-radius:18px;box-shadow:0 1px 2px rgba(15,37,71,.03),0 8px 24px -16px rgba(15,37,71,.12)}
-  .card.card-dark{background:linear-gradient(160deg,#0f2547 0%,#163460 55%,#1c3d6d 100%);border-color:transparent;box-shadow:0 20px 40px -20px rgba(15,37,71,.45),inset 0 1px 0 rgba(255,255,255,.06)}
-  .card.card-accent{background:linear-gradient(160deg,#fff5ee 0%,#fdeee5 55%,#fce4d4 100%);border-color:#f4c5a5;box-shadow:0 8px 28px -14px rgba(232,131,95,.35),inset 0 1px 0 rgba(255,255,255,.6)}
+/* ───────────────────────────────────────────────
+   QLARIFY HEALTH — Brand Design System
+   Colours: Ink #163460 · Rust #E8835F · Cream #F5F5F5
+   Fonts: Playfair Display (headings) · DM Sans (body)
+─────────────────────────────────────────────── */
+*,:after,:before{box-sizing:border-box;margin:0;padding:0;border:0 solid #e5e7eb}
+html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:'DM Sans',system-ui,sans-serif;-webkit-tap-highlight-color:transparent}
+body{font-family:'DM Sans',sans-serif;color:#163460;background:#f5f5f5;-webkit-font-smoothing:antialiased;background-image:radial-gradient(1000px 500px at 10% 0,rgba(232,131,95,.06),transparent 60%),radial-gradient(900px 600px at 90% 20%,rgba(22,52,96,.05),transparent 60%),linear-gradient(180deg,#f5f5f5,#eef3f8);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+b,strong{font-weight:700}
+img,video{max-width:100%;height:auto;display:block}
+audio,canvas,embed,iframe,svg{display:block;vertical-align:middle}
+input,button,select,textarea{font-family:inherit;font-size:100%;color:inherit}
+button,select{text-transform:none}
+button{cursor:pointer;background:none}
+ul,ol{list-style:none}
+table{border-collapse:collapse}
 
-  /* Section gradient treatments */
-  .sec-cream{position:relative;background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%)}
-  .sec-cream::before{content:"";position:absolute;inset:0;background-image:
-    radial-gradient(600px 380px at 12% 10%,rgba(232,131,95,.07),transparent 65%),
-    radial-gradient(700px 420px at 88% 90%,rgba(22,52,96,.06),transparent 65%);pointer-events:none}
-  .sec-white{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%)}
-  .sec-white::before{content:"";position:absolute;inset:0;background-image:
-    radial-gradient(500px 300px at 85% 0%,rgba(232,131,95,.06),transparent 70%);pointer-events:none}
-  .sec-alt{position:relative;background:linear-gradient(180deg,#eaf0f6 0%,#dde7f0 100%)}
-  .sec-alt::before{content:"";position:absolute;inset:0;background-image:
-    radial-gradient(700px 380px at 10% 100%,rgba(232,131,95,.09),transparent 60%);pointer-events:none}
+/* ── Typography ── */
+.h-serif{font-family:'Playfair Display',serif;letter-spacing:-.5px;line-height:1.06;color:#163460}
+.h-serif em{font-style:italic;color:#e8835f}
+.eyebrow{font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#163460;font-weight:500}
+.num{color:#e8835f;font-size:24px;line-height:1;font-family:'Playfair Display',serif;font-style:italic}
+.micro{font-size:13px;color:#5a7a94;letter-spacing:.02em}
+.font-serif{font-family:'Playfair Display',serif}
 
-  /* CTA section: rust gradient */
-  .cta-section{position:relative;background:linear-gradient(160deg,#ffe6d6 0%,#fdeee5 40%,#fce4d4 100%);overflow:hidden}
-  .cta-section::before{content:"";position:absolute;inset:0;background-image:
-    radial-gradient(900px 420px at 20% 10%,rgba(232,131,95,.22),transparent 55%),
-    radial-gradient(700px 380px at 85% 95%,rgba(22,52,96,.10),transparent 60%),
-    radial-gradient(400px 260px at 50% 50%,rgba(255,255,255,.4),transparent 70%);pointer-events:none}
-  .stage-dot{width:44px;height:44px;background:#fff;border:2px solid #c8d8e4;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#163460;font-weight:600;font-family:'Playfair Display',serif;font-size:17px;margin:0 auto}
-  .micro{font-size:13px;color:#5a7a94;letter-spacing:.02em}
-  .cross{color:#c85a5a} .check{color:#163460}
-  .num{font-family:'Playfair Display',serif;font-style:italic;color:#E8835F;font-size:22px;line-height:1}
-  .q-mark{font-family:'Playfair Display',serif;font-style:italic;color:#5a7a94;font-size:13px}
-  .hospital-strip{color:#163460;font-weight:500;font-size:13px}
-  .brand{display:inline-flex;align-items:flex-start;gap:10px;text-decoration:none}
-  .brand .logo-q{width:25px;height:27px;color:#163460;flex-shrink:0;display:block}
-  .brand .logo-text{display:inline-flex;flex-direction:column;align-items:flex-start;line-height:1}
-  .brand .logo-larify{font-family:'DM Sans',sans-serif;font-weight:800;font-size:18px;color:#163460;letter-spacing:.18em;line-height:1}
-  .brand .logo-health{font-family:'DM Sans',sans-serif;font-weight:800;font-size:10px;color:#E8835F;letter-spacing:.32em;line-height:1;margin-top:4px}
-  .brand.sm .logo-q{width:21px;height:22px}
-  .brand.sm .logo-larify{font-size:15px}
-  .brand.sm .logo-health{font-size:8.5px;margin-top:3px}
-  .brand.on-dark .logo-q{color:#fff}
-  .brand.on-dark .logo-larify{color:#fff}
+/* ── Layout helpers ── */
+.max-w-7xl{max-width:80rem;margin-left:auto;margin-right:auto}
+.max-w-6xl{max-width:72rem;margin-left:auto;margin-right:auto}
+.max-w-5xl{max-width:64rem;margin-left:auto;margin-right:auto}
+.max-w-3xl{max-width:48rem}
+.max-w-2xl{max-width:42rem}
+.max-w-xl{max-width:36rem}
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+.text-center{text-align:center}
 
-  /* Hero — light cream section */
-  .hero{position:relative;background:linear-gradient(180deg,#fdf7f2 0%,#f7f0ea 45%,#eef3f8 100%);color:#163460;overflow:hidden;isolation:isolate;border-bottom:1px solid #e6dfd8}
-  .hero::before{content:"";position:absolute;inset:0;background-image:
-    radial-gradient(circle at 18% 28%,rgba(232,131,95,.18),transparent 45%),
+/* ── WhatsApp Top Bar ── */
+.wa-topbar{
+  background:linear-gradient(90deg,#163460,#1c3d6d);
+  color:#fff;
+  padding:9px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-size:13.5px;
+  font-weight:500;
+  position:relative;
+  z-index:60;
+}
+.wa-topbar a.wa-number{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  background:#25D366;
+  color:#fff;
+  padding:5px 14px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:13.5px;
+  letter-spacing:.02em;
+  transition:background .2s;
+  text-decoration:none;
+}
+.wa-topbar a.wa-number:hover{background:#1da851}
+.wa-topbar .wa-pulse{
+  width:8px;height:8px;border-radius:50%;background:#4ade80;
+  box-shadow:0 0 0 0 rgba(74,222,128,.5);
+  animation:wapulse 1.8s infinite;
+  flex-shrink:0;
+}
+@keyframes wapulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.55)}70%{box-shadow:0 0 0 8px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+
+/* ── Header ── */
+#site-header{
+  position:sticky;
+  top:0;
+  left:0;right:0;
+  z-index:50;
+  transition:background .2s,box-shadow .2s;
+  background:rgba(253,247,242,0.92);
+  backdrop-filter:saturate(140%) blur(10px);
+  -webkit-backdrop-filter:saturate(140%) blur(10px);
+  border-bottom:1px solid rgba(200,216,228,0.5);
+}
+#site-header.scrolled{
+  background:rgba(255,255,255,.92);
+  box-shadow:0 1px 0 rgba(22,52,96,.06),0 8px 24px -16px rgba(15,37,71,.18);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 24px;
+  max-width:80rem;margin:0 auto;
+}
+.brand{display:inline-flex;align-items:center;text-decoration:none;height:52px}
+.brand svg{height:100%;width:auto;display:block}
+.brand.sm{height:34px}
+@media(max-width:520px){.brand{height:42px}}
+
+.header-cta{display:flex;align-items:center;gap:8px}
+.btn-phone{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:8px 16px;border-radius:999px;
+  border:1.5px solid rgba(232,131,95,.5);
+  background:rgba(253,238,229,.85);
+  color:#d05a18;
+  font-size:13.5px;font-weight:600;
+  transition:all .2s;
+  white-space:nowrap;
+}
+.btn-phone:hover{background:#fff;border-color:#e8835f}
+.btn-wa-header{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:8px 16px;border-radius:999px;
+  background:#25D366;color:#fff;
+  font-size:13.5px;font-weight:600;
+  transition:background .2s;
+  white-space:nowrap;
+}
+.btn-wa-header:hover{background:#1da851}
+@media(max-width:440px){
+  .btn-phone span.num-label{display:none}
+  .btn-wa-header span.wa-label{display:none}
+}
+
+/* ── Buttons ── */
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(180deg,#e8835f,#d66c43);
+  color:#fff;padding:13px 26px;border-radius:999px;
+  font-weight:500;font-size:15px;
+  transition:all .2s ease;
+  box-shadow:0 4px 16px -4px rgba(232,131,95,.5),inset 0 1px 0 hsla(0,0%,100%,.2);
+  cursor:pointer;border:none;
+}
+.btn-primary:hover{background:linear-gradient(180deg,#d66c43,#bc4f29);transform:translateY(-1px);box-shadow:0 6px 20px -4px rgba(232,131,95,.55)}
+.btn-primary.full{width:100%;justify-content:center}
+
+/* ── Cards ── */
+.card{
+  background:linear-gradient(180deg,#fff,#fafcfe);
+  border:1px solid #c8d8e4;border-radius:18px;
+  box-shadow:0 1px 2px rgba(15,37,71,.03),0 8px 24px -16px rgba(15,37,71,.12);
+}
+.card-dark{
+  background:linear-gradient(160deg,#0f2547,#163460 55%,#1c3d6d);
+  border-color:transparent;
+  box-shadow:0 20px 40px -20px rgba(15,37,71,.45),inset 0 1px 0 hsla(0,0%,100%,.06);
+}
+.card-accent{
+  background:linear-gradient(160deg,#fff5ee,#fdeee5 55%,#fce4d4);
+  border-color:#f4c5a5;
+  box-shadow:0 8px 28px -14px rgba(232,131,95,.35),inset 0 1px 0 hsla(0,0%,100%,.6);
+}
+
+/* ── Chip / Badge ── */
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 13px;background:#fdeee5;
+  border:1px solid #f4c5a5;border-radius:999px;
+  font-size:13px;color:#d05a18;font-weight:500;
+}
+.chip .dot{
+  width:7px;height:7px;border-radius:50%;background:#e8835f;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}
+
+/* ── Sections ── */
+.hero{
+  position:relative;
+  background:linear-gradient(180deg,#fdf7f2,#f7f0ea 45%,#eef3f8);
+  color:#163460;overflow:hidden;isolation:isolate;
+  border-bottom:1px solid #e6dfd8;
+}
+.hero:before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background-image:radial-gradient(circle at 18% 28%,rgba(232,131,95,.18),transparent 45%),
     radial-gradient(circle at 82% 72%,rgba(22,52,96,.08),transparent 50%),
-    radial-gradient(circle at 50% 100%,rgba(255,255,255,.6),transparent 60%);
-    z-index:-1}
-  .hero::after{content:"";position:absolute;inset:0;
-    background-image:linear-gradient(rgba(22,52,96,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(22,52,96,.04) 1px,transparent 1px);
-    background-size:48px 48px;mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 85%);
-    z-index:-1}
-  .hero .h-serif{color:#163460}
-  .hero .h-serif em{color:#E8835F}
+    radial-gradient(circle at 50% 100%,hsla(0,0%,100%,.6),transparent 60%);
+}
+.hero:after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background-image:linear-gradient(rgba(22,52,96,.04) 1px,transparent 0),
+    linear-gradient(90deg,rgba(22,52,96,.04) 1px,transparent 0);
+  background-size:48px 48px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 85%);
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 85%);
+}
+.sec-cream{position:relative;background:linear-gradient(180deg,#f7f9fc,#eef3f8)}
+.sec-cream:before{content:"";position:absolute;inset:0;background-image:radial-gradient(600px 380px at 12% 10%,rgba(232,131,95,.07),transparent 65%),radial-gradient(700px 420px at 88% 90%,rgba(22,52,96,.06),transparent 65%);pointer-events:none}
+.sec-white{position:relative;background:linear-gradient(180deg,#fff,#f8fafc)}
+.sec-white:before{content:"";position:absolute;inset:0;background-image:radial-gradient(500px 300px at 85% 0,rgba(232,131,95,.06),transparent 70%);pointer-events:none}
+.sec-alt{position:relative;background:linear-gradient(180deg,#eaf0f6,#dde7f0)}
+.sec-alt:before{content:"";position:absolute;inset:0;background-image:radial-gradient(700px 380px at 10% 100%,rgba(232,131,95,.09),transparent 60%);pointer-events:none}
+.cta-section{
+  position:relative;
+  background:linear-gradient(160deg,#ffe6d6,#fdeee5 40%,#fce4d4);overflow:hidden;
+}
+.cta-section:before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(900px 420px at 20% 10%,rgba(232,131,95,.22),transparent 55%),
+    radial-gradient(700px 380px at 85% 95%,rgba(22,52,96,.1),transparent 60%),
+    radial-gradient(400px 260px at 50% 50%,hsla(0,0%,100%,.4),transparent 70%);
+  pointer-events:none;
+}
 
-  /* Sample videos */
-  .vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-  .vid-card{background:#fff;border:1px solid #c8d8e4;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+/* ── Lead form inputs ── */
+.lead-input{
+  width:100%;padding:12px 16px;border-radius:12px;
+  border:1.5px solid #c8d8e4;background:#fff;
+  font-size:14px;color:#163460;font-family:'DM Sans',sans-serif;
+  transition:border-color .15s,box-shadow .15s;
+}
+.lead-input:focus{outline:none;border-color:#e8835f;box-shadow:0 0 0 3px rgba(232,131,95,.15)}
+.lead-input::placeholder{color:rgba(22,52,96,.45)}
+.lead-input option{color:#163460}
+.hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
 
-  /* Carousel */
-  .carousel-wrap{position:relative}
-  .carousel-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px) / 3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 22px;scrollbar-width:none;-ms-overflow-style:none}
-  .carousel-track::-webkit-scrollbar{display:none}
-  .carousel-card{scroll-snap-align:start;min-width:0}
-  .carousel-nav{position:absolute;top:calc(50% - 22px);transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:linear-gradient(180deg,#ffffff 0%,#f3f7fb 100%);border:1px solid #c8d8e4;color:#163460;font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px -8px rgba(15,37,71,.25),0 2px 6px rgba(15,37,71,.08);z-index:3;transition:all .2s ease;font-family:'DM Sans',sans-serif;font-weight:400}
-  .carousel-nav:hover{background:linear-gradient(180deg,#E8835F 0%,#d05a18 100%);color:#fff;border-color:transparent;transform:translateY(-50%) scale(1.04)}
-  .carousel-nav:disabled{opacity:.35;cursor:not-allowed}
-  .carousel-nav:disabled:hover{background:linear-gradient(180deg,#ffffff 0%,#f3f7fb 100%);color:#163460;transform:translateY(-50%)}
-  .carousel-prev{left:-14px}
-  .carousel-next{right:-14px}
-  .carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
-  .carousel-dot{width:8px;height:8px;border-radius:999px;background:#c8d8e4;border:0;padding:0;cursor:pointer;transition:all .25s ease}
-  .carousel-dot.active{width:26px;background:linear-gradient(90deg,#E8835F,#d05a18)}
-  @media (max-width:1024px){.carousel-track{grid-auto-columns:calc((100% - 18px) / 2)}}
-  @media (max-width:720px){.carousel-track{grid-auto-columns:85%}.carousel-nav{display:none}}
-  .vid-shell{position:relative;aspect-ratio:16/9;background:#0f2547 center/cover no-repeat;cursor:pointer}
-  .vid-shell video{width:100%;height:100%;display:block;object-fit:cover}
-  .vid-shell .poster{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity .2s}
-  .vid-shell.playing .poster{opacity:0;pointer-events:none}
-  .vid-shell .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:opacity .2s}
-  .vid-shell.playing .play{opacity:0;pointer-events:none}
-  .vid-shell .play-ring{width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(15,37,71,.4)}
-  .vid-shell .play-ring::after{content:"";width:0;height:0;border-left:15px solid #E8835F;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
-  .vid-badge{position:absolute;top:10px;left:10px;background:rgba(15,37,71,.78);color:#fff;font-size:11px;font-weight:500;letter-spacing:.05em;padding:5px 10px;border-radius:999px;backdrop-filter:blur(6px)}
-  .vid-dur{position:absolute;bottom:10px;right:10px;background:rgba(15,37,71,.78);color:#fff;font-size:11px;padding:4px 8px;border-radius:6px}
-  .vid-meta{padding:14px 16px 16px;border-top:1px solid #eef2f6}
-  .vid-stage{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#E8835F;font-weight:600}
-  .vid-stage .stage-label{color:#5a7a94;font-weight:400;margin-left:6px;letter-spacing:.04em;text-transform:none}
-  .vid-title{font-family:'Playfair Display',serif;font-size:16px;color:#163460;font-weight:600;line-height:1.35;margin-top:6px}
-  .vid-source{font-size:12px;color:#5a7a94;margin-top:4px}
+/* ── Trust strip ── */
+.trust-strip{position:relative;background:linear-gradient(180deg,#fff,#f8fafc);border-top:1px solid #e6dfd8;border-bottom:1px solid #dde5ec}
+.trust-eyebrow{text-align:center;color:#5a7a94;font-family:'DM Sans',sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.trust-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;align-items:stretch;margin-top:24px}
+@media(max-width:1024px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:12px}}
+@media(max-width:600px){.trust-grid{grid-template-columns:repeat(3,1fr);gap:10px}}
+@media(max-width:380px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+.tl{display:flex;align-items:center;justify-content:center;padding:16px 12px;border:1px solid #e3ebf3;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfcfe);transition:all .25s;min-height:74px}
+.tl:hover{border-color:#f4c5a5;box-shadow:0 8px 18px -10px rgba(232,131,95,.35);transform:translateY(-1px)}
+.tl img{max-height:36px;max-width:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(100%);opacity:.78;transition:filter .25s,opacity .25s}
+.tl:hover img{filter:grayscale(0);opacity:1}
+@media(max-width:600px){.tl{padding:12px 8px;min-height:64px}.tl img{max-height:28px}}
 
-  /* Trust strip — hospital logos */
-  .trust-strip{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border-top:1px solid #e6dfd8;border-bottom:1px solid #dde5ec}
-  .trust-eyebrow{text-align:center;color:#5a7a94;font-family:'DM Sans',sans-serif;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
-  .trust-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;align-items:stretch;margin-top:22px}
-  @media (max-width:1024px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
-  @media (max-width:600px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
-  .tl{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;padding:14px 8px;border:1px solid #e3ebf3;border-radius:12px;background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%);color:#163460;opacity:.82;transition:all .25s ease;min-height:74px}
-  .tl:hover{opacity:1;border-color:#f4c5a5;box-shadow:0 8px 18px -10px rgba(232,131,95,.35);transform:translateY(-1px)}
-  .tl .tl-dot{width:6px;height:6px;border-radius:50%;background:#E8835F;opacity:.85;margin-bottom:2px}
-  .tl .tl-name{font-weight:700;font-size:14px;line-height:1.1;letter-spacing:-.3px}
-  .tl .tl-sub{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#5a7a94;font-weight:500}
-  .tl-serif .tl-name{font-family:'Playfair Display',serif;font-weight:700}
-  .tl-sans .tl-name{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:-.4px}
-  .tl-italic .tl-name{font-family:'Playfair Display',serif;font-style:italic;font-weight:600}
+/* ── Video carousel ── */
+.vid-card{background:#fff;border:1px solid #c8d8e4;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.carousel-wrap{position:relative}
+.carousel-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc(33.333% - 12px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 22px;scrollbar-width:none;-ms-overflow-style:none}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-card{scroll-snap-align:start;min-width:0}
+.carousel-nav{position:absolute;top:calc(50% - 22px);transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:linear-gradient(180deg,#fff,#f3f7fb);border:1px solid #c8d8e4;color:#163460;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px -8px rgba(15,37,71,.25);z-index:3;transition:all .2s;font-family:'DM Sans',sans-serif}
+.carousel-nav:hover{background:linear-gradient(180deg,#e8835f,#d05a18);color:#fff;border-color:transparent;transform:translateY(-50%) scale(1.04)}
+.carousel-nav:disabled{opacity:.35;cursor:not-allowed}
+.carousel-nav:disabled:hover{background:linear-gradient(180deg,#fff,#f3f7fb);color:#163460;transform:translateY(-50%)}
+.carousel-prev{left:-14px}.carousel-next{right:-14px}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
+.carousel-dot{width:8px;height:8px;border-radius:999px;background:#c8d8e4;border:0;padding:0;cursor:pointer;transition:all .25s}
+.carousel-dot.active{width:26px;background:linear-gradient(90deg,#e8835f,#d05a18)}
+@media(min-width:1100px){.carousel-track{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;overflow:visible;padding:4px 2px;scroll-snap-type:none}.carousel-dots,.carousel-nav{display:none!important}}
+@media(max-width:1099px){.carousel-track{grid-auto-columns:calc(50% - 9px)}}
+@media(max-width:720px){.carousel-track{grid-auto-columns:85%}.carousel-nav{display:none}}
+.vid-shell{position:relative;aspect-ratio:16/9;background:#0f2547 50%/cover no-repeat}
+.vid-shell .poster{position:absolute;inset:0;background-size:cover;background-position:50%;transition:opacity .2s}
+.vid-shell.playing .poster{opacity:0;pointer-events:none}
+.vid-shell .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .2s}
+.vid-shell.playing .play{opacity:0;pointer-events:none}
+.vid-shell .play-ring{width:62px;height:62px;border-radius:50%;background:hsla(0,0%,100%,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(15,37,71,.4)}
+.vid-shell .play-ring:after{content:"";width:0;height:0;border-left:16px solid #e8835f;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.vid-badge{position:absolute;top:10px;left:10px;font-weight:500;letter-spacing:.05em;padding:5px 10px;border-radius:999px;backdrop-filter:blur(6px);background:rgba(15,37,71,.78);color:#fff;font-size:11px}
+.vid-meta{padding:14px 16px 16px;border-top:1px solid #eef2f6}
+.vid-stage{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#e8835f;font-weight:600}
+.vid-stage .stage-label{color:#5a7a94;font-weight:400;margin-left:6px;letter-spacing:.04em;text-transform:none}
+.vid-title{font-family:'Playfair Display',serif;font-size:16px;color:#163460;font-weight:600;line-height:1.35;margin-top:6px}
+.vid-source{font-size:12px;color:#5a7a94;margin-top:4px}
 
-  /* Sticky floating CTA */
-  .sticky-cta{position:fixed;right:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#E8835F 0%,#d05a18 100%);color:#fff;padding:14px 20px;border-radius:999px;font-weight:600;font-size:14px;box-shadow:0 14px 32px -8px rgba(232,131,95,.55),0 4px 12px rgba(15,37,71,.2),inset 0 1px 0 rgba(255,255,255,.25);transform:translateY(14px);opacity:0;pointer-events:none;transition:opacity .25s ease, transform .25s ease}
-  .sticky-cta.visible{opacity:1;transform:translateY(0);pointer-events:auto}
-  .sticky-cta:hover{background:linear-gradient(180deg,#d05a18 0%,#b44410 100%)}
-  .sticky-cta svg{width:16px;height:16px}
-  @media (max-width:520px){.sticky-cta{right:14px;bottom:14px;padding:12px 16px;font-size:13px}}
+/* ── Explainer ── */
+.explainer-wrap{max-width:920px;margin:0 auto}
+.explainer-shell{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#163460,#0f2547 55%,#0a1d3d);box-shadow:0 30px 60px -24px rgba(15,37,71,.45),0 8px 24px -12px rgba(15,37,71,.3);cursor:pointer}
+.explainer-shell:before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 22% 28%,rgba(232,131,95,.22),transparent 50%),radial-gradient(circle at 78% 72%,hsla(0,0%,100%,.08),transparent 55%);pointer-events:none}
+.explainer-shell .explainer-eyebrow{position:absolute;top:22px;left:22px;color:hsla(0,0%,100%,.7);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;z-index:2}
+.explainer-shell .explainer-title{position:absolute;left:22px;right:22px;bottom:22px;color:#fff;font-family:'Playfair Display',serif;font-size:22px;line-height:1.2;font-weight:600;letter-spacing:-.3px;z-index:2;max-width:520px}
+.explainer-shell .explainer-title em{color:#e8835f;font-style:italic}
+.explainer-shell.playing .explainer-eyebrow,.explainer-shell.playing .explainer-title{display:none}
+.explainer-shell video{width:100%;height:100%;display:block;object-fit:contain;background:#000}
+.explainer-shell .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .2s;z-index:3}
+.explainer-shell.playing .play{opacity:0;pointer-events:none}
+.explainer-shell .play-ring{width:88px;height:88px;border-radius:50%;background:hsla(0,0%,100%,.95);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 40px rgba(15,37,71,.55);transition:transform .25s}
+.explainer-shell:hover .play-ring{transform:scale(1.06)}
+.explainer-shell .play-ring:after{content:"";width:0;height:0;border-left:22px solid #e8835f;border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
+
+/* ── Testimonial logo ── */
+.testimonial-logo{display:block;height:24px;width:auto;max-width:80px;object-fit:contain;opacity:.75;flex-shrink:0}
+
+/* ── Sticky CTA ── */
+.sticky-cta{
+  position:fixed;right:22px;bottom:22px;z-index:60;
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(180deg,#25D366,#1da851);
+  color:#fff;padding:14px 22px;border-radius:999px;
+  font-weight:700;font-size:14px;
+  box-shadow:0 14px 32px -8px rgba(37,211,102,.55),0 4px 12px rgba(15,37,71,.2),inset 0 1px 0 hsla(0,0%,100%,.25);
+  transform:translateY(14px);opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s;
+  text-decoration:none;
+}
+.sticky-cta.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.sticky-cta:hover{background:linear-gradient(180deg,#1da851,#158a3e)}
+.sticky-cta svg{width:18px;height:18px;flex-shrink:0}
+@media(max-width:520px){.sticky-cta{right:14px;bottom:14px;padding:12px 16px;font-size:13px}}
+
+/* ── Grid helpers ── */
+.grid{display:grid}
+.flex{display:flex}
+.inline-flex{display:inline-flex}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-center{justify-content:center}
+.justify-between{justify-content:space-between}
+.flex-wrap{flex-wrap:wrap}
+.flex-col{flex-direction:column}
+.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-10{gap:2.5rem}
+.gap-x-10{column-gap:2.5rem}.gap-x-5{column-gap:1.25rem}
+.gap-y-2{row-gap:.5rem}.gap-y-4{row-gap:1rem}
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hidden{display:none}
+.border-t{border-top:1px solid #c8d8e4}
+.border-y{border-top:1px solid #c8d8e4;border-bottom:1px solid #c8d8e4}
+.border-b{border-bottom:1px solid #c8d8e4}
+.h-px{height:1px;background:#c8d8e4}
+
+/* ── Spacing ── */
+.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}
+.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-10{margin-top:2.5rem}
+.mt-12{margin-top:3rem}.mt-14{margin-top:3.5rem}
+.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-8{margin-bottom:2rem}
+.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}
+.py-8{padding-top:2rem;padding-bottom:2rem}
+.py-10{padding-top:2.5rem;padding-bottom:2.5rem}
+.py-12{padding-top:3rem;padding-bottom:3rem}
+.py-14{padding-top:3.5rem;padding-bottom:3.5rem}
+.py-16{padding-top:4rem;padding-bottom:4rem}
+.py-20{padding-top:5rem;padding-bottom:5rem}
+
+/* ── Colours ── */
+.text-ink{color:#163460}
+.text-rust{color:#e8835f}
+.text-rust-dk{color:#d05a18}
+.text-white{color:#fff}
+.text-muted{color:rgba(22,52,96,.6)}
+.text-muted-75{color:rgba(22,52,96,.75)}
+.text-muted-80{color:rgba(22,52,96,.8)}
+.text-muted-85{color:rgba(22,52,96,.85)}
+.bg-white{background:#fff}
+.bg-cream{background:#f5f5f5}
+.underline{text-decoration:underline}
+
+/* ── Footer ── */
+footer{background:linear-gradient(180deg,#f5f5f5,#eef3f8);border-top:1px solid #dde5ec}
+
+/* ── Responsive hero grid ── */
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:768px){
+  .hero-grid{grid-template-columns:7fr 5fr}
+  .hero h1{font-size:58px!important}
+  .sec-3col{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sec-2col{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec-4col{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .sec-2col-form{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(min-width:1024px){
+  .sec-lg-4col{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+.sec-3col,.sec-2col,.sec-4col,.sec-lg-4col{display:grid;grid-template-columns:1fr;gap:1.25rem}
+.sec-2col-form{display:grid;grid-template-columns:1fr;gap:.75rem}
+.hero-pad{padding-top:6rem;padding-bottom:5rem}
+@media(min-width:768px){.hero-pad{padding-top:8rem;padding-bottom:6rem}}
+
+/* ── Form states ── */
+.form-success{padding:2rem;text-align:center}
+.form-success .success-icon{width:56px;height:56px;background:linear-gradient(135deg,#25D366,#1da851);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.form-success .success-icon svg{width:28px;height:28px;color:#fff}
+
+/* ── Overflow table ── */
+.overflow-x-auto{overflow-x:auto}
+.rounded-2xl{border-radius:16px}
+.shadow-sm{box-shadow:0 1px 2px rgba(15,37,71,.05)}
+th,td{padding:0}
+
+@media(max-width:520px){
+  .hero h1{font-size:32px!important;line-height:1.1}
+  .hero-pad{padding-top:80px;padding-bottom:48px}
+  h2{font-size:26px!important}
+}
+@media(max-width:380px){
+  .hero h1{font-size:28px!important}
+}
+
+/* ── Space-y ── */
+.space-y-1>*+*{margin-top:.25rem}
+.space-y-2>*+*{margin-top:.5rem}
+.space-y-3>*+*{margin-top:.75rem}
+.space-y-4>*+*{margin-top:1rem}
 </style>
 </head>
+
 <body class="bg-cream">
 
-<header class="absolute top-0 inset-x-0 z-20">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="index.html" class="brand" aria-label="Qlarify Health">
-      <svg class="logo-q" viewBox="0 0 135 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="91.19" y1="92.54" x2="122.09" y2="132.10" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
-        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0h86a6.5 6.5 0 0 1 6.5 6.5v84a6.5 6.5 0 0 1-6.5 6.5h-86A6.5 6.5 0 0 1 0 90.5v-84A6.5 6.5 0 0 1 6.5 0ZM26.5 17.5a7 7 0 0 0-7 7v48a7 7 0 0 0 7 7h46a7 7 0 0 0 7-7v-48a7 7 0 0 0-7-7h-46Z"/>
+<!-- ═══════════════════════════════════════════
+     TOP WHATSAPP ANNOUNCEMENT BAR
+     Always visible — number highlighted
+════════════════════════════════════════════ -->
+<div class="wa-topbar">
+  <span class="wa-pulse"></span>
+  <span style="font-size:13px;opacity:.85">Quick response on WhatsApp:</span>
+  <a href="https://wa.me/918147410751?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20free%20video%20audit%20for%20our%20hospital." class="wa-number" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true" style="flex-shrink:0"><path d="M17.6 6.32A8.78 8.78 0 0 0 11.42 4 8.86 8.86 0 0 0 2.6 12.85a8.7 8.7 0 0 0 1.18 4.39L2.5 22l4.86-1.27a8.83 8.83 0 0 0 4.06.97h.01A8.86 8.86 0 0 0 20.25 12a8.74 8.74 0 0 0-2.65-5.68zm-6.18 13.5h-.01a7.36 7.36 0 0 1-3.74-1.02l-.27-.16-2.78.73.74-2.7-.17-.28A7.31 7.31 0 0 1 4 12.85 7.39 7.39 0 0 1 11.42 5.5a7.34 7.34 0 0 1 5.21 2.16 7.32 7.32 0 0 1 2.15 5.21 7.4 7.4 0 0 1-7.36 7.42zm4.05-5.55c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.14.22-.57.72-.7.86-.13.15-.26.17-.48.06-.22-.11-.94-.34-1.78-1.1-.66-.59-1.1-1.31-1.23-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.4.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38l-.43-.01a.83.83 0 0 0-.6.28c-.21.22-.79.77-.79 1.88s.81 2.18.92 2.32c.11.15 1.6 2.43 3.86 3.41.54.23.96.37 1.29.48.54.17 1.04.15 1.43.09.44-.07 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.06-.1-.2-.16-.42-.27z"/></svg>
+    +91 81474 10751
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HEADER — No navigation. Logo + Contact only.
+════════════════════════════════════════════ -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="https://qlarify.health" class="brand" aria-label="Qlarify Health">
+      <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#163460" fill-rule="evenodd" d="M7,4 H45 A3,3 0 0 1 48,7 V45 A3,3 0 0 1 45,48 H7 A3,3 0 0 1 4,45 V7 A3,3 0 0 1 7,4 Z M16,12 H36 A3,3 0 0 1 39,15 V36 A3,3 0 0 1 36,39 H16 A3,3 0 0 1 13,36 V15 A3,3 0 0 1 16,12 Z"/>
+        <line x1="44" y1="46" x2="57" y2="61" stroke="#163460" stroke-width="7" stroke-linecap="round"/>
+        <text x="62" y="38" font-family="'DM Sans', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#163460">LARIFY</text>
+        <text x="66" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="6" fill="#E8835F">HEALTH</text>
       </svg>
-      <span class="logo-text"><span class="logo-larify">LARIFY</span><span class="logo-health">HEALTH</span></span>
     </a>
-    <nav class="hidden md:flex items-center gap-6 text-[14px] text-ink/75">
-      <a href="#concept" class="hover:text-rust">The concept</a>
-      <a href="#moves" class="hover:text-rust">Four moves</a>
-      <a href="#journey" class="hover:text-rust">Framework</a>
-      <a href="#work" class="hover:text-rust">Work</a>
-    </nav>
-    <a href="#book" id="cta-nav" class="btn-primary !py-2 !px-4 !text-[13px]">Book a call →</a>
+    <div class="header-cta">
+      <a href="tel:+918147410751" class="btn-phone" aria-label="Call +91 81474 10751">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span class="num-label">+91 81474 10751</span>
+      </a>
+      <a href="https://wa.me/918147410751?text=Hi%2C%20I%27d%20like%20a%20free%20video%20audit%20for%20our%20cancer%20centre."
+         target="_blank" rel="noopener" class="btn-wa-header" aria-label="WhatsApp us">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.78 8.78 0 0 0 11.42 4 8.86 8.86 0 0 0 2.6 12.85a8.7 8.7 0 0 0 1.18 4.39L2.5 22l4.86-1.27a8.83 8.83 0 0 0 4.06.97h.01A8.86 8.86 0 0 0 20.25 12a8.74 8.74 0 0 0-2.65-5.68zm-6.18 13.5h-.01a7.36 7.36 0 0 1-3.74-1.02l-.27-.16-2.78.73.74-2.7-.17-.28A7.31 7.31 0 0 1 4 12.85 7.39 7.39 0 0 1 11.42 5.5a7.34 7.34 0 0 1 5.21 2.16 7.32 7.32 0 0 1 2.15 5.21 7.4 7.4 0 0 1-7.36 7.42zm4.05-5.55c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.14.22-.57.72-.7.86-.13.15-.26.17-.48.06-.22-.11-.94-.34-1.78-1.1-.66-.59-1.1-1.31-1.23-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.4.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38l-.43-.01a.83.83 0 0 0-.6.28c-.21.22-.79.77-.79 1.88s.81 2.18.92 2.32c.11.15 1.6 2.43 3.86 3.41.54.23.96.37 1.29.48.54.17 1.04.15 1.43.09.44-.07 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.06-.1-.2-.16-.42-.27z"/></svg>
+        <span class="wa-label">WhatsApp</span>
+      </a>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════ -->
 <section class="hero">
-  <div class="max-w-7xl mx-auto px-6 pt-28 pb-20 md:pt-32 md:pb-24 grid md:grid-cols-12 gap-10 items-center">
-    <div class="md:col-span-7">
-      <span class="chip"><span class="dot"></span> For Oncology & Cancer Centres · Video is Infrastructure</span>
-      <h1 class="h-serif mt-5 text-[40px] md:text-[58px] font-bold">
-        A diagnosis is not a <em>funnel</em>.<br/>It's a <em>decision in crisis</em>.
+  <div class="max-w-7xl px-6 hero-pad hero-grid" style="margin:0 auto">
+
+    <!-- Left: Copy -->
+    <div>
+      <span class="chip"><span class="dot"></span> Free Video Audit · Cancer Centres</span>
+      <h1 class="h-serif mt-6" style="font-size:42px;font-weight:700">
+        Your oncology videos exist.<br/>
+        Patients are choosing <em>other centres</em>.
       </h1>
-      <p class="mt-6 text-[16px] md:text-[17px] text-ink/75 max-w-xl leading-relaxed">In the 72 hours after a biopsy comes back positive, families don't read brochures. They watch videos — on YouTube, on WhatsApp, in a tab open at 2am. Whether they come to you is decided there.</p>
-      <div class="mt-7 flex flex-wrap items-center gap-3">
-        <a href="#book" id="cta-primary" class="btn-primary">Book a 30-min call →</a>
-        <a href="#concept" class="btn-ghost on-light">See how it works</a>
+      <p class="mt-3 text-rust" style="font-size:15px;font-weight:500">Your video budget is growing. Treatment start enquiries aren't rising with it.</p>
+      <p class="mt-4 text-muted-80" style="font-size:16.5px;line-height:1.65;max-width:34rem">
+        No one has mapped your oncology video library against the actual patient journey. In <strong class="text-ink">7 days</strong>, we build that map — sub-specialty by sub-specialty, funnel stage by funnel stage — and show you exactly where patients are dropping off to other centres.
+      </p>
+      <ul class="mt-6 grid gap-x-5 gap-y-2" style="font-size:14.5px;color:rgba(22,52,96,.85);max-width:34rem;grid-template-columns:1fr 1fr">
+        <li class="flex gap-2 items-start"><span class="text-rust" style="font-weight:700;flex-shrink:0">✓</span> Inventory of every oncology video across all channels</li>
+        <li class="flex gap-2 items-start"><span class="text-rust" style="font-weight:700;flex-shrink:0">✓</span> Sub-specialty × journey-stage gap matrix</li>
+        <li class="flex gap-2 items-start"><span class="text-rust" style="font-weight:700;flex-shrink:0">✓</span> Top 10 missing videos, ranked by patient volume</li>
+        <li class="flex gap-2 items-start"><span class="text-rust" style="font-weight:700;flex-shrink:0">✓</span> 30-min walkthrough with your oncology marketing team</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#lead-form-hero" class="btn-primary">Show me my video gaps →</a>
+        <a href="https://calendly.com/qlarify-marketing/30min" target="_blank" rel="noopener" class="text-ink underline" style="font-size:14px;opacity:.65" onmouseover="this.style.color='#e8835f'" onmouseout="this.style.color='#163460'">Prefer to talk? Book 20 min →</a>
       </div>
+      <p class="mt-4" style="font-size:13px;color:rgba(22,52,96,.55)">Takes 30 seconds · No sales pitch · We reply in 24 hours</p>
     </div>
-    <div class="md:col-span-5">
-      <div class="card p-6">
-        <div class="eyebrow !text-ink/60 mb-3">A decade of healthcare video</div>
-        <div class="grid grid-cols-3 gap-3 text-center">
-          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">10<span class="text-rust">+</span></div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Years focused only on healthcare</div></div>
-          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">10K<span class="text-rust">+</span></div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Patient-facing videos produced</div></div>
-          <div><div class="font-serif text-ink text-[30px] font-bold leading-none">1</div><div class="text-[12px] text-ink/65 mt-2 leading-snug">Thesis — video as infrastructure</div></div>
+
+    <!-- Right: Lead Form — BELOW hero copy on mobile, alongside on desktop -->
+    <div id="lead-form-hero">
+      <div class="card p-7">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="chip"><span class="dot"></span> Free · 7-day turnaround</span>
         </div>
-        <div class="h-px my-4 bg-border"></div>
-        <div class="text-[13px] text-ink/70 leading-relaxed">We don't pitch campaigns. We diagnose the gap between what a patient is searching for and what your clinic is saying — and build the library that closes it.</div>
+        <h3 class="h-serif text-ink" style="font-size:24px;font-weight:700;line-height:1.2">See where your cancer centre funnel is leaking.</h3>
+        <p class="mt-2" style="font-size:13.5px;color:rgba(22,52,96,.7);line-height:1.6">
+          We'll map your full oncology video library against the patient journey and walk you through the exact gaps — free, in 7 days.
+        </p>
+        <div class="mt-3" style="background:rgba(22,52,96,.04);border:1px solid rgba(200,216,228,.8);border-radius:12px;padding:12px 16px;font-size:12.5px;color:rgba(22,52,96,.7);line-height:1.6">
+          <span class="text-ink" style="font-weight:600">Best fit for cancer centres with:</span>
+          <div class="mt-1 space-y-1">
+            <div>· 20+ videos across channels</div>
+            <div>· Dedicated oncology marketing</div>
+            <div>· Multi-sub-specialty setup</div>
+          </div>
+        </div>
+        <form class="mt-4 grid grid-cols-1 gap-3" name="lead-hero" data-form="hero-oncology" onsubmit="return submitLead(event)">
+          <div class="hp-field" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
+          <input required name="name" type="text" placeholder="Your full name" class="lead-input" />
+          <input required name="email" type="email" placeholder="Work email" class="lead-input" />
+          <input required name="phone" type="tel" placeholder="WhatsApp / contact number" class="lead-input" />
+          <input required name="hospital" type="text" placeholder="Cancer centre / hospital name" class="lead-input" />
+          <select required name="role" class="lead-input">
+            <option value="">Your designation</option>
+            <option>Marketing Head</option>
+            <option>CMO / VP Marketing</option>
+            <option>CEO / COO / CXO</option>
+            <option>Brand / Digital Lead</option>
+            <option>Business Development Head</option>
+            <option>Other</option>
+          </select>
+          <button type="submit" class="btn-primary full" style="padding:14px 26px;font-size:15px;margin-top:4px">Show me my video gaps →</button>
+        </form>
+        <div class="mt-3 flex items-center justify-between" style="font-size:12px;color:rgba(22,52,96,.5)">
+          <span>✓ Takes 30 sec</span>
+          <span>✓ No sales pitch</span>
+          <span>✓ Reply in 24 hrs</span>
+        </div>
+        <div class="mt-3" style="background:rgba(232,131,95,.06);border:1px solid rgba(232,131,95,.2);border-radius:12px;padding:12px 16px;font-size:12.5px;color:rgba(22,52,96,.75);line-height:1.6">
+          <span class="text-rust" style="font-weight:600">Why this is free:</span> We run 3 audits a month to identify cancer centres where we can build long-term video infrastructure. If there's a fit, we'll show you how we work. If not, you keep the audit and the roadmap.
+        </div>
+        <div class="h-px mt-3"></div>
+        <p class="text-center mt-3" style="font-size:12.5px;color:rgba(22,52,96,.6)">
+          Prefer to talk first? <a href="https://calendly.com/qlarify-marketing/30min" target="_blank" rel="noopener" class="text-rust underline" style="font-weight:500">Book a 20-min call →</a>
+        </p>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- TRUST STRIP — hospital logos -->
+<!-- ═══════════════════════════════════════════
+     TRUST STRIP — Hospital Logos
+════════════════════════════════════════════ -->
 <section class="trust-strip">
-  <div class="max-w-7xl mx-auto px-6 py-10 md:py-12">
-    <div class="trust-eyebrow">A decade of work with India's leading hospitals</div>
-    <div class="trust-grid">
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Manipal</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">Narayana</span><span class="tl-sub">Health</span></div>
-      <div class="tl tl-italic"><span class="tl-dot"></span><span class="tl-name">Sparsh</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">Sakra</span><span class="tl-sub">World Hospital</span></div>
-      <div class="tl tl-sans"><span class="tl-dot"></span><span class="tl-name">KIMS</span><span class="tl-sub">Hospitals</span></div>
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Rainbow</span><span class="tl-sub">Children's</span></div>
-      <div class="tl tl-serif"><span class="tl-dot"></span><span class="tl-name">Gleneagles</span><span class="tl-sub">Hospitals</span></div>
+  <div class="max-w-7xl px-6 py-12" style="margin:0 auto">
+    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 mb-8">
+      <div class="text-center">
+        <div class="font-serif text-ink" style="font-size:28px;font-weight:700;line-height:1">10,000<span class="text-rust">+</span></div>
+        <div style="font-size:11.5px;text-transform:uppercase;letter-spacing:.18em;color:rgba(22,52,96,.6);margin-top:4px">Patient-facing videos shipped</div>
+      </div>
+      <div class="text-center">
+        <div class="font-serif text-ink" style="font-size:28px;font-weight:700;line-height:1">17<span class="text-rust">+</span></div>
+        <div style="font-size:11.5px;text-transform:uppercase;letter-spacing:.18em;color:rgba(22,52,96,.6);margin-top:4px">Hospitals served</div>
+      </div>
+      <div class="text-center">
+        <div class="font-serif text-ink" style="font-size:28px;font-weight:700;line-height:1">10<span class="text-rust">+</span></div>
+        <div style="font-size:11.5px;text-transform:uppercase;letter-spacing:.18em;color:rgba(22,52,96,.6);margin-top:4px">Years building patient-facing video</div>
+      </div>
+      <div class="text-center">
+        <div class="font-serif text-ink" style="font-size:28px;font-weight:700;line-height:1">7</div>
+        <div style="font-size:11.5px;text-transform:uppercase;letter-spacing:.18em;color:rgba(22,52,96,.6);margin-top:4px">Days to deliver an audit</div>
+      </div>
+    </div>
+    <div class="trust-eyebrow">Trusted inside India's most-recognised hospital systems</div>
+    <div class="trust-grid mt-6">
+      <div class="tl"><img src="https://qlarify.health/logos/manipal.svg" alt="Manipal Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/narayana.png" alt="Narayana Health" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/sparsh.svg" alt="Sparsh Hospital" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/sakra.svg" alt="Sakra World Hospital" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/kims.png" alt="KIMS Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/rainbow.png" alt="Rainbow Children's Hospitals" loading="lazy" /></div>
+      <div class="tl"><img src="https://qlarify.health/logos/gleneagles.png" alt="Gleneagles Hospitals" loading="lazy" /></div>
     </div>
   </div>
 </section>
 
-<!-- CONCEPT -->
-<section id="concept" class="sec-white border-y border-border">
-  <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
+<!-- ═══════════════════════════════════════════
+     PROBLEM FRAMING — "The gap nobody maps"
+════════════════════════════════════════════ -->
+<section class="sec-white border-y" id="reality">
+  <div class="max-w-7xl px-6 py-14" style="margin:0 auto;position:relative;z-index:10">
     <div class="max-w-3xl">
-      <div class="eyebrow mb-3">The concept</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Cancer patients don't shop. They <em>search for trust</em>.</h2>
-      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">Every video the family finds shapes the conversation. We build the library that makes sure the oncologist they've already watched on screen is the one they call in the morning.</p>
+      <div class="eyebrow mb-3">The gap nobody maps</div>
+      <h2 class="h-serif" style="font-size:32px;font-weight:700"><em>More oncology videos</em> has never meant more treatment starts.</h2>
+      <p class="mt-4 text-muted-80" style="font-size:16px;line-height:1.65">Cancer centres don't have a shooting problem. They have a <em class="font-serif text-ink">structure</em> problem. Here's what's quietly broken inside your oncology video library.</p>
     </div>
-    <div class="mt-10 grid md:grid-cols-3 gap-4">
-      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Trust before the first appointment</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">A 4-minute oncologist explainer does more than a 400-page brochure ever will.</p></div>
-      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Shorter second-opinion window</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">Clear protocol videos compress weeks of hesitation into days of action.</p></div>
-      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Family buy-in, faster</h3><p class="mt-2 text-[14px] text-ink/75 leading-relaxed">When the son abroad watches your tumour-board video, he stops vetoing the decision.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FOUR MOVES -->
-<section id="moves" class="sec-cream">
-  <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
-    <div class="max-w-3xl">
-      <div class="eyebrow mb-3">How we work</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">We don't start with a <em>camera</em>.<br/>We start with a <em>map</em>.</h2>
-    </div>
-    <div class="mt-10 grid md:grid-cols-4 gap-4">
-      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Audit</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Inventory every existing video. Tag by sub-specialty, stage, format, performance.</p></div>
-      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Map</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Place each video on a two-axis grid: sub-specialty × patient journey stage.</p></div>
-      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Identify</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Rank the gaps by patient volume, revenue and conversion impact.</p></div>
-      <div class="card card-accent p-5"><div class="num">04</div><h3 class="font-serif text-[19px] text-ink font-semibold mt-1">Create</h3><p class="mt-2 text-[13.5px] text-ink/75 leading-relaxed">Produce targeted video for the gaps that matter — tuned to viewer intent.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FRAMEWORK -->
-<section id="journey" class="sec-white border-y border-border">
-  <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
-    <div class="max-w-3xl">
-      <div class="eyebrow mb-3">The framework</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Four stages. Four <em>jobs</em> for video.</h2>
-      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">A video that lands at awareness often fails at decision. Each stage needs its own verb — and its own format.</p>
-    </div>
-    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div>
-        <div class="stage-dot mb-3">1</div>
-        <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Diagnosis shock</div>
-          <div class="font-serif italic text-ink text-[22px] font-semibold">Educate</div>
-          <p class="q-mark mt-1">"What does this mean?"</p>
-          <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Plain-language explainers on cancer types, stages.</p>
-        </div>
-      </div>
-      <div>
-        <div class="stage-dot mb-3">2</div>
-        <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Options</div>
-          <div class="font-serif italic text-ink text-[22px] font-semibold">Credibilize</div>
-          <p class="q-mark mt-1">"What are my choices?"</p>
-          <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Surgery vs. chemo vs. radiation, protocol comparisons.</p>
-        </div>
-      </div>
-      <div>
-        <div class="stage-dot mb-3">3</div>
-        <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Choosing a centre</div>
-          <div class="font-serif italic text-ink text-[22px] font-semibold">Reassure</div>
-          <p class="q-mark mt-1">"Can I trust these people?"</p>
-          <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Doctor bios, survivor stories, tumour-board walk-throughs.</p>
-        </div>
-      </div>
-      <div>
-        <div class="stage-dot mb-3">4</div>
-        <div class="text-center">
-          <div class="eyebrow text-rust mb-1">Treatment & after</div>
-          <div class="font-serif italic text-ink text-[22px] font-semibold">Guide</div>
-          <p class="q-mark mt-1">"What happens next?"</p>
-          <div class="h-px bg-border my-3 mx-auto w-8"></div>
-          <p class="micro">Chemo-day walk-throughs, side-effects, survivorship.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY QLARIFY -->
-<section class="sec-alt">
-  <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
-    <div class="max-w-3xl">
-      <div class="eyebrow mb-3">Why Qlarify</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">Built for <em>healthcare</em>. Not adapted to it.</h2>
-    </div>
-    <div class="mt-10 grid md:grid-cols-2 gap-4">
+    <div class="mt-10 sec-3col">
       <div class="card p-6">
-        <div class="eyebrow text-ink/60 mb-2">Generic agency</div>
-        <ul class="space-y-2 text-[14.5px] text-ink/75">
-          <li class="flex gap-3"><span class="cross">✕</span> A hospital brand film with zero clinical detail.</li>
-          <li class="flex gap-3"><span class="cross">✕</span> Survivor quotes on a static banner.</li>
-          <li class="flex gap-3"><span class="cross">✕</span> No content for second-opinion seekers.</li>
-          <li class="flex gap-3"><span class="cross">✕</span> Vanity metrics.</li>
-        </ul>
+        <div class="num">01</div>
+        <h3 class="font-serif text-ink mt-1" style="font-size:20px;font-weight:600">Diagnosis lands — and patients disappear</h3>
+        <p class="mt-2 text-muted-75" style="font-size:14.5px;line-height:1.65">The moment a patient hears "you have cancer", the research begins. Most centre YouTube channels point them at generic awareness content. They find their answers — and their clinic — somewhere else.</p>
       </div>
-      <div class="card p-6" style="border-color:#E8835F;">
-        <div class="eyebrow text-rust mb-2">Qlarify Health</div>
-        <ul class="space-y-2 text-[14.5px] text-ink/90">
-          <li class="flex gap-3"><span class="check">◆</span> A mapped library across breast, lung, colorectal, haematology, paediatric.</li>
-          <li class="flex gap-3"><span class="check">◆</span> Filmed stories, with consent, showing the real arc of treatment.</li>
-          <li class="flex gap-3"><span class="check">◆</span> Protocol explainers built for families evaluating three hospitals.</li>
-          <li class="flex gap-3"><span class="check">◆</span> Measured in tumour-board consults, treatment starts and referral lift.</li>
-        </ul>
+      <div class="card p-6">
+        <div class="num">02</div>
+        <h3 class="font-serif text-ink mt-1" style="font-size:20px;font-weight:600">Trust is built over weeks, not in one visit</h3>
+        <p class="mt-2 text-muted-75" style="font-size:14.5px;line-height:1.65">Oncology patients evaluate 3–4 hospitals before starting treatment. The centre they choose is the one they've already watched — procedure explainers, tumour board walk-throughs, survivor stories. Most centres have none of this at the decision stage.</p>
+      </div>
+      <div class="card p-6">
+        <div class="num">03</div>
+        <h3 class="font-serif text-ink mt-1" style="font-size:20px;font-weight:600">Sub-specialty gaps are invisible without a map</h3>
+        <p class="mt-2 text-muted-75" style="font-size:14.5px;line-height:1.65">Breast oncology might have 22 videos. Haematology has two. Nobody has counted. Nobody knows. The next shoot is commissioned without ever looking at what's already there — and the same gaps are missed, again.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SAMPLE WORK -->
-<section id="work" class="sec-white border-y border-border">
-  <div class="max-w-7xl mx-auto px-6 py-14 md:py-16 relative z-10">
+<!-- ═══════════════════════════════════════════
+     EXPLAINER VIDEO
+════════════════════════════════════════════ -->
+<section class="sec-cream" id="explainer">
+  <div class="max-w-6xl px-6 py-14" style="margin:0 auto;position:relative;z-index:10">
+    <div class="text-center max-w-2xl" style="margin:0 auto">
+      <div class="eyebrow mb-3">90 seconds</div>
+      <h2 class="h-serif" style="font-size:32px;font-weight:700;line-height:1.2">The <em>whole idea</em>, in 90 seconds.</h2>
+      <p class="mt-3 text-muted-75" style="font-size:15px">If this sounds familiar — watch this.</p>
+    </div>
+    <div class="mt-8 explainer-wrap">
+      <div class="vid-shell explainer-shell" data-src="https://video.qlarify.health/videos/qlarify-explainer.mp4">
+        <span class="explainer-eyebrow">Qlarify Health · Explainer</span>
+        <div class="explainer-title">Video as <em>infrastructure</em>, not campaigns — explained.</div>
+        <div class="play"><div class="play-ring"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     METHOD + DELIVERABLES
+════════════════════════════════════════════ -->
+<section class="sec-cream" id="moves">
+  <div class="max-w-7xl px-6 py-14" style="margin:0 auto;position:relative;z-index:10">
     <div class="max-w-3xl">
-      <div class="eyebrow mb-3">Sample work</div>
-      <h2 class="h-serif text-ink text-[28px] md:text-[40px] font-bold">5 videos. Out of <em>10,000+</em>.</h2>
-      <p class="mt-4 text-[16px] text-ink/80 leading-relaxed">A five-film snapshot of the library we've built for hospitals over the last decade. The real value isn't any single film — it's the <em class="font-serif text-ink">map</em> that tells you which one to make next, for which patient, at which stage.</p>
+      <div class="eyebrow mb-3">What you'll walk away with</div>
+      <h2 class="h-serif" style="font-size:32px;font-weight:700">Not a deck.<br/>A working <em>map</em> in 7 days.</h2>
+      <p class="mt-4 text-muted-80" style="font-size:16px;line-height:1.65">Four artifacts your team uses to brief, kill, or reorder every oncology video shoot for the next 12 months.</p>
+    </div>
+    <div class="mt-10 sec-lg-4col">
+      <div class="card p-5"><div class="num">01</div><h3 class="font-serif text-ink mt-1" style="font-size:18px;font-weight:600">Library inventory</h3><p class="mt-2 text-muted-75" style="font-size:13.5px;line-height:1.65">Every oncology video across YouTube, web, Insta, WhatsApp — tagged by sub-specialty, stage, format, and performance.</p></div>
+      <div class="card p-5"><div class="num">02</div><h3 class="font-serif text-ink mt-1" style="font-size:18px;font-weight:600">Gap matrix</h3><p class="mt-2 text-muted-75" style="font-size:13.5px;line-height:1.65">Sub-specialty × journey-stage grid. Over-served, under-served, and silent — visible in one frame.</p></div>
+      <div class="card p-5"><div class="num">03</div><h3 class="font-serif text-ink mt-1" style="font-size:18px;font-weight:600">Top 10 missing</h3><p class="mt-2 text-muted-75" style="font-size:13.5px;line-height:1.65">Ranked against patient volume, specialty revenue, and where prospects drop off. Your next 10 shoots, decided.</p></div>
+      <div class="card card-accent p-5"><div class="num">04</div><h3 class="font-serif text-ink mt-1" style="font-size:18px;font-weight:600">30-min walkthrough</h3><p class="mt-2 text-muted-75" style="font-size:13.5px;line-height:1.65">A working session with your marketing lead. We walk the oncology map, you walk away with a 12-month plan.</p></div>
+    </div>
+
+    <!-- Gap Matrix Visualisation -->
+    <div class="mt-14">
+      <div class="eyebrow mb-3">What you'll receive in 7 days</div>
+      <h3 class="font-serif text-ink" style="font-size:22px;font-weight:600">This is what your oncology gap matrix looks like.</h3>
+      <p class="mt-2 text-muted" style="font-size:14px;max-width:40rem;line-height:1.65">Each cell shows how many videos your centre has for that sub-specialty × patient-journey stage. Red = gap. Green = covered. This single view tells you exactly where to shoot next.</p>
+      <div class="mt-6 overflow-x-auto rounded-2xl border-t shadow-sm" style="border:1px solid #c8d8e4">
+        <table style="width:100%;font-size:12.5px;border-collapse:collapse;background:#fff;min-width:560px">
+          <thead>
+            <tr style="background:#163460;color:#fff">
+              <th style="text-align:left;padding:12px 16px;font-weight:600;border-radius:16px 0 0 0;width:180px">Sub-specialty</th>
+              <th style="padding:12px;font-weight:600;text-align:center">Awareness</th>
+              <th style="padding:12px;font-weight:600;text-align:center">Trust Building</th>
+              <th style="padding:12px;font-weight:600;text-align:center">Decision</th>
+              <th style="padding:12px;font-weight:600;text-align:center;border-radius:0 16px 0 0">Post-Treatment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-top:1px solid #eef2f6">
+              <td style="padding:12px 16px;font-weight:500;color:#163460">Breast Oncology</td>
+              <td style="padding:12px;text-align:center"><span style="background:#dcfce7;color:#15803d;font-weight:600;padding:3px 10px;border-radius:999px">14</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#dcfce7;color:#15803d;font-weight:600;padding:3px 10px;border-radius:999px">8</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fef3c7;color:#b45309;font-weight:600;padding:3px 10px;border-radius:999px">3</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+            </tr>
+            <tr style="border-top:1px solid #eef2f6;background:rgba(22,52,96,.015)">
+              <td style="padding:12px 16px;font-weight:500;color:#163460">Colorectal / GI</td>
+              <td style="padding:12px;text-align:center"><span style="background:#fef3c7;color:#b45309;font-weight:600;padding:3px 10px;border-radius:999px">3</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">1</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+            </tr>
+            <tr style="border-top:1px solid #eef2f6">
+              <td style="padding:12px 16px;font-weight:500;color:#163460">Haematology</td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+            </tr>
+            <tr style="border-top:1px solid #eef2f6;background:rgba(22,52,96,.015)">
+              <td style="padding:12px 16px;font-weight:500;color:#163460">Head &amp; Neck</td>
+              <td style="padding:12px;text-align:center"><span style="background:#fef3c7;color:#b45309;font-weight:600;padding:3px 10px;border-radius:999px">4</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fef3c7;color:#b45309;font-weight:600;padding:3px 10px;border-radius:999px">2</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+              <td style="padding:12px;text-align:center"><span style="background:#fee2e2;color:#dc2626;font-weight:600;padding:3px 10px;border-radius:999px">0</span></td>
+            </tr>
+            <tr style="border-top:1px solid #eef2f6;background:rgba(22,52,96,.025)">
+              <td style="padding:12px 16px;color:rgba(22,52,96,.4);font-style:italic;font-size:11.5px">+ 4 more sub-specialties…</td>
+              <td colspan="4" style="padding:12px;text-align:center;font-size:11.5px;color:rgba(22,52,96,.4);font-style:italic">Full matrix delivered in your audit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-3 flex flex-wrap gap-4" style="font-size:12px;color:rgba(22,52,96,.6)">
+        <span class="flex items-center gap-2"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#4ade80"></span> Well covered</span>
+        <span class="flex items-center gap-2"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#fbbf24"></span> Thin coverage</span>
+        <span class="flex items-center gap-2"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#f87171"></span> Gap — no video</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SAMPLE WORK — Video Carousel
+════════════════════════════════════════════ -->
+<section class="sec-white border-y" id="work">
+  <div class="max-w-7xl px-6 py-14" style="margin:0 auto;position:relative;z-index:10">
+    <div class="max-w-3xl">
+      <div class="eyebrow mb-3">Sample work · Oncology</div>
+      <h2 class="h-serif" style="font-size:32px;font-weight:700">One specialty. The full <em>journey</em>.</h2>
+      <p class="mt-4 text-muted-80" style="font-size:16px;line-height:1.65">Five films from oncology — built for Manipal Hospitals. Watched in order, they walk a cancer patient from the moment of diagnosis through to life after treatment. This is what <em class="font-serif text-ink">video as infrastructure</em> looks like in production.</p>
     </div>
     <div class="mt-10 carousel-wrap">
-      <button class="carousel-nav carousel-prev" aria-label="Previous video">&lsaquo;</button>
+      <button class="carousel-nav carousel-prev" aria-label="Previous">&lsaquo;</button>
       <div class="carousel-track">
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v1.webm">
-            <div class="poster" style="background-image:url('assets/posters/v1.jpg')"></div>
+          <div class="vid-shell" data-yt="aFAl0kNB7Vc">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/aFAl0kNB7Vc/maxresdefault.jpg')"></div>
             <span class="vid-badge">Condition Primer</span>
-            <span class="vid-dur">2:18</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
-            <div class="vid-stage">01 · Educate <span class="stage-label">Awareness</span></div>
-            <h4 class="vid-title">Lymphoma — explained by Dr. Mallikarjun Kalashetty</h4>
-            <div class="vid-source">Manipal Hospitals · Old Airport Road</div>
+            <div class="vid-stage">01 · Educate <span class="stage-label">Diagnosis Shock</span></div>
+            <h4 class="vid-title">How Is Breast Cancer Diagnosed?</h4>
+            <div class="vid-source">Dr. Poonam Patil · Manipal Hospital Old Airport Road</div>
           </div>
         </div>
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v2.webm">
-            <div class="poster" style="background-image:url('assets/posters/v2.jpg')"></div>
-            <span class="vid-badge">Doctor POV</span>
-            <span class="vid-dur">1:12</span>
+          <div class="vid-shell" data-yt="Jk_1LATKeas">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/Jk_1LATKeas/maxresdefault.jpg')"></div>
+            <span class="vid-badge">Awareness</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
-            <div class="vid-stage">02 · Credibilize <span class="stage-label">Consideration</span></div>
-            <h4 class="vid-title">Know Your Doctor — Dr. Raghavendra Chikkatur</h4>
-            <div class="vid-source">Manipal Hospitals · Varthur Road</div>
+            <div class="vid-stage">01 · Educate <span class="stage-label">Diagnosis Shock</span></div>
+            <h4 class="vid-title">Lung Cancer — Symptoms &amp; Early Detection</h4>
+            <div class="vid-source">Manipal Hospital Delhi</div>
           </div>
         </div>
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v3.webm">
-            <div class="poster" style="background-image:url('assets/posters/v3.jpg')"></div>
-            <span class="vid-badge">Treatment Walkthrough</span>
-            <span class="vid-dur">2:07</span>
+          <div class="vid-shell" data-yt="J1aa8Ful4jg">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/J1aa8Ful4jg/maxresdefault.jpg')"></div>
+            <span class="vid-badge">Treatment Options</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
-            <div class="vid-stage">02 · Credibilize <span class="stage-label">Consideration</span></div>
-            <h4 class="vid-title">Anterior Cervical Discectomy — procedure explained</h4>
-            <div class="vid-source">Manipal Hospitals · Whiteboard explainer</div>
+            <div class="vid-stage">02 · Credibilise <span class="stage-label">Trust Building</span></div>
+            <h4 class="vid-title">Chemotherapy &amp; Targeted Therapy — What to Expect</h4>
+            <div class="vid-source">Dr. Mridul Malhotra · Manipal Hospital Delhi</div>
           </div>
         </div>
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v4.webm">
-            <div class="poster" style="background-image:url('assets/posters/v4.jpg')"></div>
+          <div class="vid-shell" data-yt="Pc1vPFhQGPE">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/Pc1vPFhQGPE/maxresdefault.jpg')"></div>
             <span class="vid-badge">Patient Testimonial</span>
-            <span class="vid-dur">3:00</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
             <div class="vid-stage">03 · Reassure <span class="stage-label">Decision</span></div>
-            <h4 class="vid-title">Ms. Thanuja's journey with Dr. S. Vidyadhara</h4>
-            <div class="vid-source">Manipal Hospitals · Old Airport Road</div>
+            <h4 class="vid-title">Mrs. Jumana — Cancer Survivor Story</h4>
+            <div class="vid-source">Manipal Hospitals India</div>
           </div>
         </div>
         <div class="vid-card carousel-card">
-          <div class="vid-shell" data-src="assets/videos/v5.webm">
-            <div class="poster" style="background-image:url('assets/posters/v5.jpg')"></div>
-            <span class="vid-badge">Recovery Guide · Animated</span>
-            <span class="vid-dur">1:06</span>
+          <div class="vid-shell" data-yt="2u8a_vF-3Z0">
+            <div class="poster" style="background-image:url('https://i.ytimg.com/vi/2u8a_vF-3Z0/maxresdefault.jpg')"></div>
+            <span class="vid-badge">Treatment Journey</span>
             <div class="play"><div class="play-ring"></div></div>
           </div>
           <div class="vid-meta">
-            <div class="vid-stage">04 · Guide <span class="stage-label">Post-treatment</span></div>
-            <h4 class="vid-title">Breast Surgery & Post-Care — the emotional reality</h4>
-            <div class="vid-source">Manipal Hospitals · 2D Animated Explainer</div>
+            <div class="vid-stage">04 · Guide <span class="stage-label">Post-Treatment Care</span></div>
+            <h4 class="vid-title">Stage 3 Breast Cancer — Full Treatment Journey</h4>
+            <div class="vid-source">Manipal Hospital Kanakapura Road</div>
           </div>
         </div>
       </div>
-      <button class="carousel-nav carousel-next" aria-label="Next video">&rsaquo;</button>
+      <button class="carousel-nav carousel-next" aria-label="Next">&rsaquo;</button>
       <div class="carousel-dots">
         <button class="carousel-dot active" data-index="0" aria-label="Video 1"></button>
         <button class="carousel-dot" data-index="1" aria-label="Video 2"></button>
@@ -431,110 +789,517 @@
         <button class="carousel-dot" data-index="3" aria-label="Video 4"></button>
         <button class="carousel-dot" data-index="4" aria-label="Video 5"></button>
       </div>
+      <p class="mt-6 text-center" style="font-size:13px;color:rgba(22,52,96,.55)">All five videos are live on the official <a href="https://www.youtube.com/@Manipalhospitals" class="underline" style="color:inherit" onmouseover="this.style.color='#e8835f'" onmouseout="this.style.color='inherit'" target="_blank" rel="noopener">Manipal Hospitals</a> YouTube channel — produced by Qlarify Health.</p>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section id="book" class="cta-section">
-  <div class="max-w-5xl mx-auto px-6 py-16 md:py-20 text-center relative z-10">
-    <div class="eyebrow text-rust mb-3">Discovery call</div>
-    <h2 class="h-serif text-ink text-[30px] md:text-[46px] font-bold">Start with a <em>30-min discovery call</em>.</h2>
-    <p class="mt-5 text-[16px] text-ink/80 max-w-2xl mx-auto leading-relaxed">The first call is simple. We'll walk you through how video-as-infrastructure works for oncology, hear the challenges your centre is facing, and together decide if a pilot audit is the right next step. No deck. No pitch. A real conversation.</p>
-    <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-      <a href="#book" class="btn-primary">Book a 30-min discovery call →</a>
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section class="sec-alt" id="testimonials">
+  <div class="max-w-7xl px-6 py-14" style="margin:0 auto;position:relative;z-index:10">
+    <div class="max-w-3xl">
+      <div class="eyebrow mb-3">What marketing heads tell us after</div>
+      <h2 class="h-serif" style="font-size:32px;font-weight:700">The audit doesn't sell videos.<br/>It changes how you <em>brief</em> them.</h2>
     </div>
-    <div class="mt-6 flex flex-wrap items-center justify-center gap-5 text-[14px] text-ink/70">
-      <a href="mailto:info@qlarify.health" class="hover:text-rust">info@qlarify.health</a>
-      <span class="w-1 h-1 bg-ink/30 rounded-full"></span>
-      <a href="https://qlarify.health" class="hover:text-rust">qlarify.health</a>
-      <span class="w-1 h-1 bg-ink/30 rounded-full"></span>
-      <a href="tel:+918147410751" class="hover:text-rust">+91 81474 10751</a>
+    <div class="mt-10 sec-lg-4col">
+      <div class="card p-6">
+        <div class="font-serif text-rust" style="font-size:40px;line-height:1;font-style:italic">"</div>
+        <p class="text-muted-85" style="font-size:14.5px;line-height:1.65;margin-top:4px">We thought we knew where our coverage was thin. Turned out cardiology had 47 videos and nephrology had none — and nephrology was our second-largest specialty. Hard to argue with a grid in front of you.</p>
+        <div class="h-px mt-4 mb-4"></div>
+        <div class="flex items-center gap-3">
+          <img src="https://qlarify.health/logos/manipal.svg" alt="Manipal Hospitals" class="testimonial-logo" loading="lazy" />
+          <div>
+            <div class="text-ink" style="font-size:13px;font-weight:600">Marketing Head</div>
+            <div style="font-size:12px;color:rgba(22,52,96,.6)">Multi-specialty chain · Bangalore</div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-6">
+        <div class="font-serif text-rust" style="font-size:40px;line-height:1;font-style:italic">"</div>
+        <p class="text-muted-85" style="font-size:14.5px;line-height:1.65;margin-top:4px">Same budget, same agency. We just stopped pointing decision-stage patients at awareness-stage videos. The cost-per-lead numbers moved on their own after that.</p>
+        <div class="h-px mt-4 mb-4"></div>
+        <div class="flex items-center gap-3">
+          <img src="https://qlarify.health/logos/rainbow.png" alt="Rainbow Hospitals" class="testimonial-logo" loading="lazy" />
+          <div>
+            <div class="text-ink" style="font-size:13px;font-weight:600">Digital Marketing Lead</div>
+            <div style="font-size:12px;color:rgba(22,52,96,.6)">Women &amp; children's hospital · Chennai</div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-6">
+        <div class="font-serif text-rust" style="font-size:40px;line-height:1;font-style:italic">"</div>
+        <p class="text-muted-85" style="font-size:14.5px;line-height:1.65;margin-top:4px">Four of our planned shoots turned out to be duplicates of films we'd already made. Nobody had connected the dots. Cancelling them was the straightforward part — finding them was the work.</p>
+        <div class="h-px mt-4 mb-4"></div>
+        <div class="flex items-center gap-3">
+          <img src="https://qlarify.health/logos/kims.png" alt="KIMS Hospitals" class="testimonial-logo" loading="lazy" />
+          <div>
+            <div class="text-ink" style="font-size:13px;font-weight:600">CMO</div>
+            <div style="font-size:12px;color:rgba(22,52,96,.6)">Tertiary care hospital · Hyderabad</div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-dark p-6 text-white">
+        <div class="eyebrow" style="color:#e8835f;margin-bottom:8px">Outcome snapshot</div>
+        <ul class="space-y-3" style="font-size:14px;line-height:1.65">
+          <li class="flex gap-2"><span class="text-rust">→</span> 31% lower cost-per-lead on paid ads</li>
+          <li class="flex gap-2"><span class="text-rust">→</span> 4 redundant shoots cancelled in month 1</li>
+          <li class="flex gap-2"><span class="text-rust">→</span> 6 silent specialties identified</li>
+          <li class="flex gap-2"><span class="text-rust">→</span> 18 months of agency briefs, replaced</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<footer class="bg-cream border-t border-border">
-  <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-3">
-    <a href="index.html" class="brand sm" aria-label="Qlarify Health">
-      <svg class="logo-q" viewBox="0 0 135 145" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <line x1="91.19" y1="92.54" x2="122.09" y2="132.10" stroke="currentColor" stroke-width="15" stroke-linecap="round"/>
-        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0h86a6.5 6.5 0 0 1 6.5 6.5v84a6.5 6.5 0 0 1-6.5 6.5h-86A6.5 6.5 0 0 1 0 90.5v-84A6.5 6.5 0 0 1 6.5 0ZM26.5 17.5a7 7 0 0 0-7 7v48a7 7 0 0 0 7 7h46a7 7 0 0 0 7-7v-48a7 7 0 0 0-7-7h-46Z"/>
+<!-- ═══════════════════════════════════════════
+     MID-PAGE LEAD FORM
+════════════════════════════════════════════ -->
+<section class="cta-section" id="lead-form-mid">
+  <div class="max-w-7xl px-6 py-16" style="margin:0 auto;position:relative;z-index:10">
+    <div style="max-width:680px;margin:0 auto">
+      <div class="card p-7">
+        <div class="text-center">
+          <div class="eyebrow text-rust mb-2">Reserve your audit slot</div>
+          <h2 class="h-serif" style="font-size:28px;font-weight:700;line-height:1.2">See if your cancer centre qualifies.</h2>
+          <p class="mt-3 text-muted-75" style="font-size:14.5px">We audit 3 hospitals per month (manual process). Next available slot: <strong class="text-ink">May 2026</strong>.</p>
+        </div>
+        <form class="mt-6 grid grid-cols-1 gap-3" name="lead-mid" data-form="mid-oncology" onsubmit="return submitLead(event)">
+          <div class="hp-field" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
+          <input required name="name" type="text" placeholder="Your full name" class="lead-input" />
+          <input required name="email" type="email" placeholder="Work email" class="lead-input" />
+          <input required name="phone" type="tel" placeholder="WhatsApp / contact number" class="lead-input" />
+          <div class="sec-2col-form">
+            <input required name="hospital" type="text" placeholder="Cancer centre / hospital name" class="lead-input" />
+            <select required name="role" class="lead-input">
+              <option value="">Your designation</option>
+              <option>Marketing Head</option>
+              <option>CMO / VP Marketing</option>
+              <option>CEO / COO / CXO</option>
+              <option>Brand / Digital Lead</option>
+              <option>Business Development Head</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary full" style="padding:14px 26px">See if we're a fit →</button>
+          <p class="text-center" style="font-size:12.5px;color:rgba(22,52,96,.5);margin-top:4px">30 seconds. No sales pitch. We reply within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FINAL CTA
+════════════════════════════════════════════ -->
+<section class="cta-section" id="book">
+  <div class="max-w-5xl px-6 py-16" style="margin:0 auto;position:relative;z-index:10">
+    <div class="text-center" style="max-width:42rem;margin:0 auto">
+      <div class="eyebrow text-rust mb-3">Last step</div>
+      <h2 class="h-serif" style="font-size:36px;font-weight:700;line-height:1.1">Stop briefing the next oncology shoot.<br/>Start with the <em>map</em>.</h2>
+      <p class="mt-5 text-muted-80" style="font-size:16px;line-height:1.65">7 days. Your full oncology library, mapped. The top 10 gaps, ranked. A 30-minute walkthrough with your team. Free.</p>
+      <p class="mt-4 text-muted-75" style="font-size:14.5px;line-height:1.65">After the audit, some cancer centres choose to work with us on production. Most find the map alone changes how they brief their agency. Either way — the audit is yours to keep.</p>
+      <p class="mt-3 text-rust" style="font-size:14px;font-weight:500">3 audits/month. Next available slot: <strong>May 2026</strong>.</p>
+    </div>
+    <div class="mt-8 card p-7" style="max-width:42rem;margin:2rem auto 0" id="lead-form-final">
+      <form class="grid grid-cols-1 gap-3" name="lead-final" data-form="final-oncology" onsubmit="return submitLead(event)">
+        <div class="hp-field" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
+        <input required name="name" type="text" placeholder="Your full name" class="lead-input" />
+        <input required name="email" type="email" placeholder="Work email" class="lead-input" />
+        <input required name="phone" type="tel" placeholder="WhatsApp / contact number" class="lead-input" />
+        <div class="sec-2col-form">
+          <input required name="hospital" type="text" placeholder="Cancer centre / hospital name" class="lead-input" />
+          <select required name="role" class="lead-input">
+            <option value="">Your designation</option>
+            <option>Marketing Head</option>
+            <option>CMO / VP Marketing</option>
+            <option>CEO / COO / CXO</option>
+            <option>Brand / Digital Lead</option>
+            <option>Business Development Head</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary full" style="padding:14px 26px;font-size:15px">Reserve audit slot →</button>
+        <p class="text-center" style="font-size:12.5px;color:rgba(22,52,96,.5)">30 seconds. No sales pitch. Reply in 24 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="max-w-7xl px-6 py-8 flex flex-col items-center gap-4" style="margin:0 auto">
+    <a href="https://qlarify.health" class="brand sm" aria-label="Qlarify Health">
+      <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#163460" fill-rule="evenodd" d="M7,4 H45 A3,3 0 0 1 48,7 V45 A3,3 0 0 1 45,48 H7 A3,3 0 0 1 4,45 V7 A3,3 0 0 1 7,4 Z M16,12 H36 A3,3 0 0 1 39,15 V36 A3,3 0 0 1 36,39 H16 A3,3 0 0 1 13,36 V15 A3,3 0 0 1 16,12 Z"/>
+        <line x1="44" y1="46" x2="57" y2="61" stroke="#163460" stroke-width="7" stroke-linecap="round"/>
+        <text x="62" y="38" font-family="'DM Sans', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#163460">LARIFY</text>
+        <text x="66" y="62" font-family="'DM Sans', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="6" fill="#E8835F">HEALTH</text>
       </svg>
-      <span class="logo-text"><span class="logo-larify">LARIFY</span><span class="logo-health">HEALTH</span></span>
     </a>
-    <div class="micro">© 2026 Qlarify Health · Video is Infrastructure. Not Campaigns.</div>
+    <div class="flex items-center gap-5 flex-wrap justify-center">
+      <a href="https://linkedin.com/company/qlarify" target="_blank" rel="noopener" class="micro" style="text-decoration:none" onmouseover="this.style.color='#e8835f'" onmouseout="this.style.color=''">LinkedIn</a>
+      <a href="https://qlarify.health" class="micro" style="text-decoration:none" onmouseover="this.style.color='#e8835f'" onmouseout="this.style.color=''">qlarify.health</a>
+      <a href="mailto:info@qlarify.health" class="micro" style="text-decoration:none" onmouseover="this.style.color='#e8835f'" onmouseout="this.style.color=''">info@qlarify.health</a>
+      <span class="micro">© 2026 Qlarify Health</span>
+    </div>
   </div>
 </footer>
 
-<!-- Floating sticky CTA -->
-<a href="#book" id="sticky-cta" class="sticky-cta" aria-label="Book a 30-minute call">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"></rect><path d="M8 2v4M16 2v4M3 10h18"></path></svg>
-  Book a 30-min call
+<!-- ═══════════════════════════════════════════
+     STICKY WhatsApp CTA (appears after hero scroll)
+════════════════════════════════════════════ -->
+<a href="https://wa.me/918147410751?text=Hi%2C%20I%27d%20like%20a%20free%20video%20audit%20for%20our%20cancer%20centre."
+   id="sticky-cta" class="sticky-cta" target="_blank" rel="noopener" aria-label="WhatsApp us for a free audit">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 6.32A8.78 8.78 0 0 0 11.42 4 8.86 8.86 0 0 0 2.6 12.85a8.7 8.7 0 0 0 1.18 4.39L2.5 22l4.86-1.27a8.83 8.83 0 0 0 4.06.97h.01A8.86 8.86 0 0 0 20.25 12a8.74 8.74 0 0 0-2.65-5.68zm-6.18 13.5h-.01a7.36 7.36 0 0 1-3.74-1.02l-.27-.16-2.78.73.74-2.7-.17-.28A7.31 7.31 0 0 1 4 12.85 7.39 7.39 0 0 1 11.42 5.5a7.34 7.34 0 0 1 5.21 2.16 7.32 7.32 0 0 1 2.15 5.21 7.4 7.4 0 0 1-7.36 7.42zm4.05-5.55c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.14.22-.57.72-.7.86-.13.15-.26.17-.48.06-.22-.11-.94-.34-1.78-1.1-.66-.59-1.1-1.31-1.23-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.4.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38l-.43-.01a.83.83 0 0 0-.6.28c-.21.22-.79.77-.79 1.88s.81 2.18.92 2.32c.11.15 1.6 2.43 3.86 3.41.54.23.96.37 1.29.48.54.17 1.04.15 1.43.09.44-.07 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.06-.1-.2-.16-.42-.27z"/></svg>
+  WhatsApp Us
 </a>
 
+<!-- ═══════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
 <script>
-  if (CALENDLY_URL && CALENDLY_URL.startsWith('http')) {
-    document.querySelectorAll('a[href="#book"]').forEach(a => a.setAttribute('href', CALENDLY_URL));
-    ['cta-nav','cta-primary','sticky-cta'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.setAttribute('href', CALENDLY_URL);
+/**
+ * ════════════════════════════════════════════
+ *  QLARIFY HEALTH — FORM & AUTOMATION CONFIG
+ *
+ *  HOW LEADS FLOW:
+ *  1. Form submit → Webhook (Make.com / Zapier)
+ *  2. Webhook → email to info@qlarify.health
+ *  3. Webhook → WhatsApp notification to +91 81474 10751
+ *  4. Webhook → auto-reply email to the lead
+ *  5. Webhook → push to CRM (HubSpot / Zoho / Pipedrive)
+ *  6. Fallback → Formspree (direct email capture)
+ *
+ *  SETUP INSTRUCTIONS:
+ *  ─────────────────────────────────────────
+ *  A) Create a Make.com webhook scenario OR Zapier webhook
+ *     Set WEBHOOK_URL below to your webhook URL
+ *
+ *  B) In the webhook scenario, add these steps:
+ *     → Send email to info@qlarify.health (lead details)
+ *     → Send WhatsApp via Twilio / WATI / Interakt to +91 81474 10751
+ *     → Send auto-reply email to {{email}} (see template below)
+ *     → Create CRM contact (HubSpot / Zoho / Pipedrive)
+ *
+ *  C) Optional: Create a Formspree account at formspree.io
+ *     Set FORMSPREE_ID to your form ID (e.g. "xpzvwdqo")
+ *     Configure Formspree to email info@qlarify.health
+ *
+ *  WHATSAPP NOTIFICATION FORMAT (to +91 81474 10751):
+ *  ─────────────────────────────────────────
+ *  🔔 NEW LEAD — Qlarify Oncology Page
+ *
+ *  👤 Name: [name]
+ *  🏥 Hospital: [hospital]
+ *  💼 Designation: [role]
+ *  📧 Email: [email]
+ *  📱 Contact: [phone]
+ *  🕐 Time: [timestamp]
+ *  📍 Source: [form_id]
+ *
+ *  AUTO-REPLY EMAIL TEMPLATE (to lead):
+ *  ─────────────────────────────────────────
+ *  Subject: Your free video audit is confirmed — Qlarify Health
+ *
+ *  Hi [name],
+ *
+ *  Thank you for requesting a free video audit for [hospital].
+ *  We've received your details and will review your cancer centre
+ *  within 24 hours.
+ *
+ *  Here's what happens next:
+ *  1. We confirm you're a fit (within 24 hrs)
+ *  2. We start the audit — no input needed from your end
+ *  3. 7 days later: your 30-min walkthrough call
+ *
+ *  Any questions? WhatsApp us: +91 81474 10751
+ *  Or email: info@qlarify.health
+ *
+ *  — Vijaya & the Qlarify team
+ * ════════════════════════════════════════════
+ */
+
+const CONFIG = {
+  // ── Primary: Webhook URL (Make.com / Zapier / n8n)
+  // Handles: email to Qlarify, WhatsApp notify, auto-reply, CRM push
+  webhook_url: "https://script.google.com/macros/s/AKfycbzgjyGyU8Cm3Iw4FkP7UfSDWFlaxW-iqbJ8BgQYc0N8xz79qIVALm2ps9lAaqD4qFQXnw/exec",
+
+  // ── Fallback: Formspree (direct email to info@qlarify.health)
+  formspree_id: "",  // e.g. "xpzvwdqo" from formspree.io
+
+  // ── HubSpot (optional — if using HubSpot CRM directly)
+  hubspot_portal_id: "",
+  hubspot_form_id: "",
+  hubspot_region: "na1",
+
+  // ── Analytics (optional)
+  ga4_id: "",
+  meta_pixel_id: "",
+
+  // ── Internal
+  notify_wa: "+918147410751",
+  notify_email: "info@qlarify.health",
+  calendly_url: "https://calendly.com/qlarify-marketing/30min",
+  specialty: "Oncology",
+  page: "oncology"
+};
+
+/* ── Analytics boot ── */
+if (CONFIG.ga4_id) {
+  const ga = document.createElement('script'); ga.async = true;
+  ga.src = `https://www.googletagmanager.com/gtag/js?id=${CONFIG.ga4_id}`;
+  document.head.appendChild(ga);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date()); gtag('config', CONFIG.ga4_id);
+}
+if (CONFIG.meta_pixel_id) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.meta_pixel_id); fbq('track', 'PageView');
+}
+
+/* ── Attribution capture ── */
+(function(){
+  try {
+    const p = new URLSearchParams(location.search);
+    const s = JSON.parse(sessionStorage.getItem('qfy_attr') || '{}');
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(k => {
+      const v = p.get(k); if (v && !s[k]) s[k] = v;
     });
+    if (!s.referrer && document.referrer && !document.referrer.includes(location.host)) s.referrer = document.referrer;
+    if (!s.first_touch) s.first_touch = new Date().toISOString();
+    sessionStorage.setItem('qfy_attr', JSON.stringify(s));
+  } catch(e){}
+})();
+
+function getAttribution(){ try{ return JSON.parse(sessionStorage.getItem('qfy_attr')||'{}'); }catch(e){ return {}; } }
+function splitName(n){ const p=(n||'').trim().split(/\s+/); return {first:p.shift()||'',last:p.join(' ')}; }
+function getHsUtk(){ const m=document.cookie.match(/hubspotutk=([^;]+)/); return m?m[1]:null; }
+
+/* ── WhatsApp message builder ── */
+function buildWaMessage(data) {
+  const ts = new Date().toLocaleString('en-IN', {timeZone:'Asia/Kolkata', dateStyle:'medium', timeStyle:'short'});
+  return `🔔 NEW LEAD — Qlarify ${CONFIG.specialty} Page\n\n` +
+    `👤 Name: ${data.name}\n` +
+    `🏥 Hospital: ${data.hospital}\n` +
+    `💼 Designation: ${data.role}\n` +
+    `📧 Email: ${data.email}\n` +
+    `📱 Contact: ${data.phone}\n` +
+    `🕐 Time: ${ts} IST\n` +
+    `📍 Source: ${data.form_id}`;
+}
+
+/* ── Main form submission handler ── */
+async function submitLead(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type=submit]');
+  const originalText = btn.innerHTML;
+
+  /* Honeypot check */
+  const hp = form.querySelector('[name="website"]');
+  if (hp && hp.value) return false;
+
+  btn.innerHTML = '<span style="opacity:.7">Sending…</span>';
+  btn.disabled = true;
+
+  const raw = Object.fromEntries(new FormData(form));
+  const attribution = getAttribution();
+  const { first, last } = splitName(raw.name);
+  const timestamp = new Date().toISOString();
+
+  const leadData = {
+    name: raw.name || '',
+    first_name: first,
+    last_name: last,
+    email: raw.email || '',
+    phone: raw.phone || '',
+    hospital: raw.hospital || '',
+    role: raw.role || '',
+    designation: raw.role || '',
+    form_id: form.dataset.form || '',
+    specialty: CONFIG.specialty,
+    page: CONFIG.page,
+    page_url: location.href,
+    page_title: document.title,
+    timestamp: timestamp,
+    whatsapp_message: buildWaMessage({...raw, form_id: form.dataset.form || ''}),
+    notify_email: CONFIG.notify_email,
+    notify_wa: CONFIG.notify_wa,
+    ...attribution
+  };
+
+  let submitted = false;
+
+  try {
+    /* ── 1. Primary Webhook (Make.com / Zapier) ── */
+    if (CONFIG.webhook_url) {
+      const res = await fetch(CONFIG.webhook_url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(leadData)
+      });
+      if (res.ok) submitted = true;
+      else console.warn('Webhook error:', res.status, await res.text());
+    }
+
+    /* ── 2. Formspree fallback (email to info@qlarify.health) ── */
+    if (CONFIG.formspree_id) {
+      const fsData = new FormData();
+      Object.entries(leadData).forEach(([k,v]) => fsData.append(k, v));
+      const fsRes = await fetch(`https://formspree.io/f/${CONFIG.formspree_id}`, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: fsData
+      });
+      if (fsRes.ok) submitted = true;
+    }
+
+    /* ── 3. HubSpot direct (if configured) ── */
+    if (CONFIG.hubspot_portal_id && CONFIG.hubspot_form_id) {
+      const fields = [
+        { name: 'email', value: leadData.email },
+        { name: 'firstname', value: first },
+        { name: 'lastname', value: last },
+        { name: 'phone', value: leadData.phone },
+        { name: 'company', value: leadData.hospital },
+        { name: 'jobtitle', value: leadData.designation },
+        { name: 'lead_source', value: 'Video Audit Landing Page — ' + CONFIG.specialty },
+        { name: 'audit_form_source', value: leadData.form_id }
+      ];
+      Object.entries(attribution).forEach(([k,v]) => { if(v) fields.push({name:k,value:String(v)}); });
+      const hsPayload = {
+        submittedAt: Date.now(),
+        fields,
+        context: { hutk: getHsUtk()||undefined, pageUri: location.href, pageName: document.title }
+      };
+      const apiBase = CONFIG.hubspot_region === 'eu1' ? 'https://api-eu1.hsforms.com' : 'https://api.hsforms.com';
+      const hsRes = await fetch(`${apiBase}/submissions/v3/integration/submit/${CONFIG.hubspot_portal_id}/${CONFIG.hubspot_form_id}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(hsPayload)
+      });
+      if (hsRes.ok) submitted = true;
+    }
+
+    /* ── If no integrations configured, log for dev mode ── */
+    if (!CONFIG.webhook_url && !CONFIG.formspree_id && !CONFIG.hubspot_portal_id) {
+      console.info('📋 [Qlarify Dev Mode] Lead captured:', leadData);
+      submitted = true; // Allow success UX in dev
+    }
+
+    /* ── Analytics events ── */
+    if (window.gtag) gtag('event', 'generate_lead', { event_category: 'form', event_label: leadData.form_id, specialty: CONFIG.specialty });
+    if (window.fbq) fbq('track', 'Lead', { source: leadData.form_id });
+    if (window.dataLayer) window.dataLayer.push({ event: 'lead_submit', form: leadData.form_id, specialty: CONFIG.specialty });
+
+    /* ── Success state ── */
+    const waUrl = `https://wa.me/918147410751?text=${encodeURIComponent('Hi, I just submitted the audit form for ' + (leadData.hospital || 'our hospital') + '. Looking forward to hearing from you!')}`;
+    form.innerHTML = `
+      <div style="padding:2rem;text-align:center">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg,#25D366,#1da851);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <div class="h-serif text-ink" style="font-size:26px;font-weight:700">You're in the queue.</div>
+        <p style="margin-top:12px;font-size:14.5px;color:rgba(22,52,96,.75);line-height:1.65">We've received your details for <strong>${leadData.hospital || 'your cancer centre'}</strong>.<br/>Expect a WhatsApp message or email within 24 hours.</p>
+        <ul style="margin-top:16px;text-align:left;font-size:14px;color:rgba(22,52,96,.8);max-width:280px;margin-left:auto;margin-right:auto">
+          <li style="display:flex;gap:8px;margin-bottom:8px"><span class="text-rust" style="font-weight:700;flex-shrink:0">1.</span> We confirm you're a fit (within 24 hrs)</li>
+          <li style="display:flex;gap:8px;margin-bottom:8px"><span class="text-rust" style="font-weight:700;flex-shrink:0">2.</span> We start the audit — no input needed from you</li>
+          <li style="display:flex;gap:8px"><span class="text-rust" style="font-weight:700;flex-shrink:0">3.</span> 7 days later: your 30-min walkthrough</li>
+        </ul>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:10px;max-width:320px;margin-left:auto;margin-right:auto">
+          <a href="${CONFIG.calendly_url}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;background:linear-gradient(180deg,#163460,#0f2547);color:#fff;font-weight:600;font-size:13.5px;text-decoration:none">Book a call while you wait →</a>
+          <a href="${waUrl}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;background:#25D366;color:#fff;font-weight:600;font-size:13.5px;text-decoration:none">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.6 6.32A8.78 8.78 0 0 0 11.42 4 8.86 8.86 0 0 0 2.6 12.85a8.7 8.7 0 0 0 1.18 4.39L2.5 22l4.86-1.27a8.83 8.83 0 0 0 4.06.97h.01A8.86 8.86 0 0 0 20.25 12a8.74 8.74 0 0 0-2.65-5.68zm-6.18 13.5h-.01a7.36 7.36 0 0 1-3.74-1.02l-.27-.16-2.78.73.74-2.7-.17-.28A7.31 7.31 0 0 1 4 12.85 7.39 7.39 0 0 1 11.42 5.5a7.34 7.34 0 0 1 5.21 2.16 7.32 7.32 0 0 1 2.15 5.21 7.4 7.4 0 0 1-7.36 7.42zm4.05-5.55c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.14.22-.57.72-.7.86-.13.15-.26.17-.48.06-.22-.11-.94-.34-1.78-1.1-.66-.59-1.1-1.31-1.23-1.53-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.4.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38l-.43-.01a.83.83 0 0 0-.6.28c-.21.22-.79.77-.79 1.88s.81 2.18.92 2.32c.11.15 1.6 2.43 3.86 3.41.54.23.96.37 1.29.48.54.17 1.04.15 1.43.09.44-.07 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.06-.1-.2-.16-.42-.27z"/></svg>
+            WhatsApp us directly
+          </a>
+        </div>
+        <p style="margin-top:16px;font-size:12px;color:rgba(22,52,96,.45)">Questions? Email <a href="mailto:info@qlarify.health" class="text-rust underline">info@qlarify.health</a></p>
+      </div>`;
+
+  } catch(err) {
+    console.error('Form submission error:', err);
+    btn.innerHTML = originalText;
+    btn.disabled = false;
+    alert('Something went wrong. Please WhatsApp us at +91 81474 10751 or email info@qlarify.health');
   }
-  const sticky = document.getElementById('sticky-cta');
-  const hero = document.querySelector('.hero');
-  function onScroll(){
-    if (!hero || !sticky) return;
-    const heroBottom = hero.getBoundingClientRect().bottom;
-    if (heroBottom < 80) sticky.classList.add('visible');
-    else sticky.classList.remove('visible');
+  return false;
+}
+
+/* ── Sticky CTA scroll trigger ── */
+const stickyCta = document.getElementById('sticky-cta');
+const heroSection = document.querySelector('.hero');
+const siteHeader = document.getElementById('site-header');
+
+function onScroll() {
+  if (siteHeader) {
+    if (window.scrollY > 10) siteHeader.classList.add('scrolled');
+    else siteHeader.classList.remove('scrolled');
   }
-  document.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
-  document.querySelectorAll('.vid-shell').forEach(shell => {
-    shell.addEventListener('click', () => {
-      if (shell.classList.contains('playing')) return;
-      const src = shell.getAttribute('data-src');
-      if (!src) return;
+  if (!heroSection || !stickyCta) return;
+  const heroBottom = heroSection.getBoundingClientRect().bottom;
+  if (heroBottom < 80) stickyCta.classList.add('visible');
+  else stickyCta.classList.remove('visible');
+}
+document.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* ── Video player ── */
+document.querySelectorAll('.vid-shell').forEach(shell => {
+  shell.addEventListener('click', () => {
+    if (shell.classList.contains('playing')) return;
+    const ytId = shell.getAttribute('data-yt');
+    const src  = shell.getAttribute('data-src');
+    if (ytId) {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+      iframe.title = 'YouTube video player';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0';
+      shell.appendChild(iframe); shell.classList.add('playing'); return;
+    }
+    if (src) {
       const v = document.createElement('video');
       v.src = src; v.controls = true; v.autoplay = true; v.playsInline = true;
-      shell.appendChild(v);
-      shell.classList.add('playing');
-    });
+      v.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000';
+      shell.appendChild(v); shell.classList.add('playing');
+    }
   });
+});
 
-  document.querySelectorAll('.carousel-wrap').forEach(wrap => {
-    const track = wrap.querySelector('.carousel-track');
-    const prev = wrap.querySelector('.carousel-prev');
-    const next = wrap.querySelector('.carousel-next');
-    const dots = Array.from(wrap.querySelectorAll('.carousel-dot'));
-    if (!track) return;
-    const cardStep = () => {
-      const first = track.querySelector('.carousel-card');
-      if (!first) return 300;
-      const style = getComputedStyle(track);
-      const gap = parseFloat(style.columnGap || style.gap || '18') || 0;
-      return first.getBoundingClientRect().width + gap;
-    };
-    const updateState = () => {
-      const step = cardStep();
-      if (!step) return;
-      const idx = Math.round(track.scrollLeft / step);
-      dots.forEach((d,i) => d.classList.toggle('active', i === idx));
-      if (prev) prev.disabled = track.scrollLeft <= 2;
-      if (next) next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
-    };
-    if (prev) prev.addEventListener('click', () => track.scrollBy({left:-cardStep(), behavior:'smooth'}));
-    if (next) next.addEventListener('click', () => track.scrollBy({left: cardStep(), behavior:'smooth'}));
-    dots.forEach((d,i) => d.addEventListener('click', () => track.scrollTo({left: i * cardStep(), behavior:'smooth'})));
-    let scrollRaf;
-    track.addEventListener('scroll', () => {
-      cancelAnimationFrame(scrollRaf);
-      scrollRaf = requestAnimationFrame(updateState);
-    }, {passive:true});
-    window.addEventListener('resize', updateState);
-    updateState();
-  });
+/* ── Carousel ── */
+document.querySelectorAll('.carousel-wrap').forEach(wrap => {
+  const track = wrap.querySelector('.carousel-track');
+  const prev  = wrap.querySelector('.carousel-prev');
+  const next  = wrap.querySelector('.carousel-next');
+  const dots  = Array.from(wrap.querySelectorAll('.carousel-dot'));
+  if (!track) return;
+  const step = () => {
+    const c = track.querySelector('.carousel-card');
+    if (!c) return 300;
+    const g = parseFloat(getComputedStyle(track).columnGap || '18') || 0;
+    return c.getBoundingClientRect().width + g;
+  };
+  const sync = () => {
+    const s = step(); if (!s) return;
+    const i = Math.round(track.scrollLeft / s);
+    dots.forEach((d,j) => d.classList.toggle('active', j === i));
+    if (prev) prev.disabled = track.scrollLeft <= 2;
+    if (next) next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+  };
+  if (prev) prev.addEventListener('click', () => track.scrollBy({left:-step(),behavior:'smooth'}));
+  if (next) next.addEventListener('click', () => track.scrollBy({left: step(),behavior:'smooth'}));
+  dots.forEach((d,i) => d.addEventListener('click', () => track.scrollTo({left:i*step(),behavior:'smooth'})));
+  let raf;
+  track.addEventListener('scroll', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(sync); }, {passive:true});
+  window.addEventListener('resize', sync);
+  sync();
+});
 </script>
 </body>
 </html>
